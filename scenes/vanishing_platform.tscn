@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://boxn6ya8bhevc"]
+
+[ext_resource type="Script" uid="uid://75edlqkot3wg" path="res://scripts/vanishing_platform.gd" id="1_nlgqw"]
+[ext_resource type="Texture2D" uid="uid://d5f855ntqcfm" path="res://assets/placeholder/DuReinFloorTileSet.png" id="2_507ja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2grjb"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u45fp"]
+size = Vector2(16, 20)
+
+[node name="Vanishing_Platform" type="StaticBody2D" unique_id=1379933760]
+collision_mask = 0
+script = ExtResource("1_nlgqw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=25283106]
+texture = ExtResource("2_507ja")
+
+[node name="SolidCollision" type="CollisionShape2D" parent="." unique_id=214188981]
+shape = SubResource("RectangleShape2D_2grjb")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2118089912]
+collision_layer = 0
+collision_mask = 2
+
+[node name="TriggerCollision" type="CollisionShape2D" parent="Area2D" unique_id=605744685]
+shape = SubResource("RectangleShape2D_u45fp")

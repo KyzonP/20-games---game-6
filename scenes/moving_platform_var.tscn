@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://pmp82dlh7h3d"]
+
+[ext_resource type="Script" uid="uid://bm3h2ot2p21pd" path="res://scripts/moving_platform_var.gd" id="1_kp2m1"]
+[ext_resource type="Texture2D" uid="uid://dt47mw121imwf" path="res://assets/placeholder/SyrFloorTileSet.png" id="2_4miix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u45fp"]
+size = Vector2(32, 8)
+
+[node name="Moving_Platform_Var" type="Node2D" unique_id=1952316230]
+script = ExtResource("1_kp2m1")
+moveTime = 3.0
+
+[node name="Moving_Platform" type="AnimatableBody2D" parent="." unique_id=199387847]
+position = Vector2(272, 208)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moving_Platform" unique_id=1724701219]
+shape = SubResource("RectangleShape2D_u45fp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moving_Platform" unique_id=230042196]
+scale = Vector2(2, 0.5)
+texture = ExtResource("2_4miix")
+
+[node name="EndPos" type="Node2D" parent="." unique_id=751589911]
+position = Vector2(608, 208)
+
+[node name="Sprite2D" type="Sprite2D" parent="EndPos" unique_id=2053900367]
+scale = Vector2(2, 0.5)
+texture = ExtResource("2_4miix")

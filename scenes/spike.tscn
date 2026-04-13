@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://u426ntg5kjxx"]
+
+[ext_resource type="Script" uid="uid://njuugvp88tx6" path="res://scripts/spike.gd" id="1_7a7y0"]
+[ext_resource type="Texture2D" uid="uid://chpb1bb04wwd" path="res://assets/placeholder/skull.png" id="2_d2mqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pnvjf"]
+size = Vector2(16, 16)
+
+[node name="Spike" type="Area2D" unique_id=136205828 groups=["Hazard"]]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_7a7y0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1589893079]
+texture = ExtResource("2_d2mqm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=962586990]
+shape = SubResource("RectangleShape2D_pnvjf")

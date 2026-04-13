@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://jxl74tbd6xmp"]
+
+[ext_resource type="Script" uid="uid://c34ggod4rnw0w" path="res://scripts/enemy.gd" id="1_md0e3"]
+[ext_resource type="Texture2D" uid="uid://by85mg604ja58" path="res://assets/placeholder/SamRight.png" id="2_4ra3w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(0, 0, 16, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4e4k"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(16, 0, 16, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnvjf"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(32, 0, 16, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6g8e2"]
+atlas = ExtResource("2_4ra3w")
+region = Rect2(48, 0, 16, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u45fp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ny0t1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4e4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnvjf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6g8e2")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lkjt4"]
+size = Vector2(13, 19)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=777069879]
+script = ExtResource("1_md0e3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=865552727]
+modulate = Color(1, 0, 1, 1)
+texture_filter = 1
+position = Vector2(0, -2)
+sprite_frames = SubResource("SpriteFrames_u45fp")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1453590664]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_lkjt4")
+
+[node name="GroundRaycast" type="RayCast2D" parent="." unique_id=2058653652]
+position = Vector2(8, 0)
+target_position = Vector2(0, 16)
+collision_mask = 5
+collide_with_areas = true
+
+[node name="FrontRaycast" type="RayCast2D" parent="." unique_id=970504196]
+position = Vector2(10, -2)
+target_position = Vector2(2, 0)
+collision_mask = 5
+collide_with_areas = true
+
+[node name="DeathCheck" type="Area2D" parent="." unique_id=2046193090]
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathCheck" unique_id=875665632]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_lkjt4")
