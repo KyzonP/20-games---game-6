@@ -6,6 +6,8 @@ var finalPos : Vector2
 
 @export var moveTime : float = 1.0
 
+@export var alwaysActive : bool = false
+
 func _ready():
 	# Sync movement with physics engine
 	initPos = $Moving_Platform.position
@@ -20,6 +22,12 @@ func _ready():
 	
 	# Start the tween
 	start()
+	
+	# Tell parent we're always active
+	if alwaysActive:
+		process_mode = Node.PROCESS_MODE_ALWAYS
+		if "alwaysActiveChild" in get_parent():
+			get_parent().alwaysActiveChild = true
 			
 func reset():
 	$Moving_Platform.sync_to_physics = false

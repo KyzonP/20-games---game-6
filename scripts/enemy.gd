@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var SPEED = 100
+@export var always_load : bool = false
 var GRAVITY = 150
 
 var startPos : Vector2
@@ -17,6 +18,9 @@ func _ready():
 	EventBus.restart.connect(reset)
 	$DeathCheck.body_entered.connect(collision)
 	$DeathCheck.area_entered.connect(collision)
+	
+	if always_load:
+		self.process_mode = Node.PROCESS_MODE_ALWAYS
 	
 func _physics_process(delta):
 	if alive:

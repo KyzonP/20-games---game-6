@@ -37,5 +37,11 @@ func changeCheckpoint(body):
 
 func reset():
 	self.global_position = checkpoint.global_position
-	up_direction = Vector2(0,-1)
-	GRAVITY = abs(GRAVITY)
+	anim.flip_v = checkpoint.flipped
+	if not checkpoint.flipped:
+		up_direction = Vector2(0,-1)
+		GRAVITY = abs(GRAVITY)
+	else:
+		up_direction = Vector2(0,1)
+		GRAVITY = abs(GRAVITY) * -1
+	
