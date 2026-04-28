@@ -9,5 +9,4 @@ func _ready():
 
 func collision(body):
 	if body.has_method("changeCheckpoint"):
-		print("yeah")
 		body.changeCheckpoint(self)
