@@ -13,7 +13,6 @@ size = Vector2(32, 16)
 script = ExtResource("1_31jh5")
 
 [node name="Moving_Platform" type="AnimatableBody2D" parent="." unique_id=199387847]
-position = Vector2(272, 208)
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moving_Platform" unique_id=1724701219]
@@ -32,7 +31,7 @@ collision_mask = 6
 shape = SubResource("RectangleShape2D_31jh5")
 
 [node name="EndPos" type="Node2D" parent="." unique_id=751589911]
-position = Vector2(608, 208)
+position = Vector2(64, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="EndPos" unique_id=2053900367]
 scale = Vector2(2, 0.5)

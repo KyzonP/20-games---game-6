@@ -22,7 +22,7 @@ func _ready():
 	if always_load:
 		self.process_mode = Node.PROCESS_MODE_ALWAYS
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	if alive:
 		if front_ray_cast.is_colliding():
 			flip()
