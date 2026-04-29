@@ -35,16 +35,17 @@ func _ready():
 			get_parent().alwaysActiveChild = true
 			
 func reset():
-	$Moving_Platform.sync_to_physics = false
-	$Moving_Platform.position = initPos
+	if not alwaysActive:
+		$Moving_Platform.sync_to_physics = false
+		$Moving_Platform.position = initPos
 
-	if moveTween:
-		moveTween.kill()
-		moveTween = null
-		
-	$Moving_Platform.sync_to_physics = true
-		
-	start(true)
+		if moveTween:
+			moveTween.kill()
+			moveTween = null
+			
+		$Moving_Platform.sync_to_physics = true
+			
+		start(true)
 	
 func start(wait: bool = false):
 	if wait:
@@ -61,4 +62,4 @@ func flip():
 	
 func collision(body):
 	if body.is_in_group("Player"):
-		EventBus.emit_signal("restart")
+		EventBus.emit_signal("smallRestart")

@@ -8,4 +8,4 @@ func _ready():
 	$Sprite2D.flip_v = flipped
 	
 func collision(_body):
-	EventBus.emit_signal("restart")
+	EventBus.emit_signal("smallRestart")

@@ -55,6 +55,15 @@ func update_active_grid(center_pos : Vector2i):
 			if room_grid.has(coord):
 				enable_room(room_grid[coord])
 				active_rooms.append(coord)
+				
+	# Reset things inside the room being entered
+	if room_grid.has(center_pos):
+		reset_room(room_grid[center_pos])
+		
+func reset_room(room):
+	for child in room.get_children():
+		if child.has_method("reset"):
+			child.reset()
 	
 func enable_room(room):
 	if room.has_method("enable"):

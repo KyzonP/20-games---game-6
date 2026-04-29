@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 EventBus="*uid://nhpxp7ydgb7r"
-BetterTerrain="*uid://cjo7xtnj70yir"
 
 [display]
 
@@ -30,7 +29,7 @@ window/stretch/aspect="ignore"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/better-terrain/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 

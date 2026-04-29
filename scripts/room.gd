@@ -15,6 +15,8 @@ func enable():
 			if "alwaysActive" in child:
 				if not child.alwaysActive:
 					child.visible = true
+			else:
+				child.visible = true
 	
 func disable():
 	if not alwaysActiveChild:
@@ -28,3 +30,5 @@ func disable():
 			if "alwaysActive" in child:
 				if not child.alwaysActive:
 					child.visible = false
+			else:
+				child.visible = false

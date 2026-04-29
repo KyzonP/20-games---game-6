@@ -6,6 +6,8 @@ var finalPos : Vector2
 
 @export var moveTime : float = 1.0
 
+@export var offSet : float = 0.0
+
 @export var alwaysActive : bool = false
 
 func _ready():
@@ -21,7 +23,7 @@ func _ready():
 	EventBus.restart.connect(reset)
 	
 	# Start the tween
-	start()
+	start(true)
 	
 	# Tell parent we're always active
 	if alwaysActive:
@@ -30,18 +32,22 @@ func _ready():
 			get_parent().alwaysActiveChild = true
 			
 func reset():
-	$Moving_Platform.sync_to_physics = false
-	$Moving_Platform.position = initPos
+	if not alwaysActive:
+		$Moving_Platform.sync_to_physics = false
+		$Moving_Platform.position = initPos
 
-	if moveTween:
-		moveTween.kill()
-		moveTween = null
-		
-	$Moving_Platform.sync_to_physics = true
-		
-	start()
+		if moveTween:
+			moveTween.kill()
+			moveTween = null
+			
+		$Moving_Platform.sync_to_physics = true
+			
+		start(true)
 	
-func start():
+func start(wait: bool = false):
+	if wait:
+		await get_tree().create_timer(offSet).timeout
+	
 	moveTween = get_tree().create_tween()
 	moveTween.tween_property($Moving_Platform, "position", finalPos, moveTime)
 	moveTween.finished.connect(flip)

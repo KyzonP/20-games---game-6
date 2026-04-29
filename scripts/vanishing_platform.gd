@@ -2,6 +2,8 @@ extends StaticBody2D
 
 var vanishTween : Tween
 
+@export var vanishTime : float = 0.5
+
 func _ready():
 	$Area2D.body_entered.connect(collision)
 	
@@ -12,7 +14,7 @@ func collision(_body):
 		vanishTween.kill()
 	
 	vanishTween = get_tree().create_tween()
-	vanishTween.tween_property($Sprite2D, "modulate", Color(1,1,1,0), 1.0)
+	vanishTween.tween_property($Sprite2D, "modulate", Color(1,1,1,0), vanishTime)
 	vanishTween.finished.connect(vanishComplete)
 	
 func vanishComplete():
@@ -26,7 +28,7 @@ func reset():
 	if vanishTween:
 		vanishTween.kill()
 		vanishTween = null
-	print("reset")
+
 	$Sprite2D.modulate = Color(1,1,1,1)
 	$SolidCollision.set_deferred("disabled", false)
 	$Area2D.set_deferred("monitoring", true)

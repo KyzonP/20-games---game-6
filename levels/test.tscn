@@ -108,22 +108,22 @@ position = Vector2(-88, 88)
 
 [node name="TileMapLayer3" parent="RoomManager" unique_id=1206368555 instance=ExtResource("3_6g8e2")]
 position = Vector2(640, 0)
-tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQAKAAAAAAD4//j/AQAKAAAAAAD2//v/AQAAAAIAAAD2//r/AQAAAAEAAAD2//n/AQAEAAIAAAD5//j/AQAKAAAAAAD6//j/AQAKAAAAAAD7//j/AQALAAAAAAABAPj/AQAKAAAAAAACAPj/AQAKAAAAAAADAPj/AQAKAAAAAAAEAPj/AQAKAAAAAAAFAPj/AQAKAAAAAAAGAPj/AQAKAAAAAAAHAPj/AQAKAAAAAAAIAPj/AQAKAAAAAAAJAPj/AQALAAAAAAAJAPn/AQAHAAIAAAAJAPr/AQAAAAEAAAAJAPv/AQAAAAEAAAAJAP7/AQAAAAEAAAAJAP//AQAAAAEAAAAJAAAAAQAAAAEAAAAJAAEAAQAAAAEAAAAJAAIAAQAAAAEAAAAJAAQAAQAAAAEAAAAJAAUAAQAAAAEAAAAJAAYAAQAHAAEAAAAJAAcAAQALAAMAAAAIAAcAAQAJAAMAAAAHAAcAAQAJAAMAAAAGAAcAAQAJAAMAAAAFAAcAAQAJAAMAAAAEAAcAAQAJAAMAAAADAAcAAQAJAAMAAAACAAcAAQAJAAMAAAABAAcAAQAJAAMAAAAAAAcAAQAJAAMAAAD//wcAAQAJAAMAAAD+/wcAAQAJAAMAAAD9/wcAAQAJAAMAAAD8/wcAAQAJAAMAAAD7/wcAAQAJAAMAAAD6/wcAAQAJAAMAAAD5/wcAAQAJAAMAAAD4/wcAAQAJAAMAAAD3/wcAAQAJAAMAAAD2/wcAAQAIAAMAAAD2/wYAAQAIAAAAAAD2/wAAAQAIAAMAAAD2////AQAIAAEAAAD2//7/AQAIAAAAAAAAAPj/AQAIAAAAAAD3////AQALAAIAAAD3/wAAAQAGAAMAAAD3//7/AQALAAAAAAD4/wAAAQACAAMAAAD5/wAAAQACAAMAAAD6/wAAAQACAAMAAAD7/wAAAQACAAMAAAD8/wAAAQAFAAMAAAD8////AQAIAAEAAAD8//7/AQAIAAAAAAAFAP7/AQALAAAAAAAEAP7/AQAIAAAAAAADAAAAAQACAAMAAAAFAP//AQALAAIAAAAEAP//AQAIAAEAAAAEAAAAAQAFAAMAAAAFAAAAAQALAAMAAAD3/wYAAQAKAAAAAAD4/wYAAQAKAAAAAAD5/wYAAQAKAAAAAAD6/wYAAQAKAAAAAAD7/wYAAQAKAAAAAAD8/wYAAQAKAAAAAAD9/wYAAQAKAAAAAAD+/wYAAQAKAAAAAAD//wYAAQAKAAAAAAAAAAYAAQAKAAAAAAABAAYAAQAKAAAAAAACAAYAAQAKAAAAAAADAAYAAQAKAAAAAAAEAAYAAQAKAAAAAAAFAAYAAQAKAAAAAAAGAAYAAQAKAAAAAAAHAAYAAQAKAAAAAAAIAAYAAQAKAAAAAAD3//n/AQAJAAMAAAD4//n/AQAJAAMAAAD5//n/AQAJAAMAAAD6//n/AQAJAAMAAAD7//n/AQALAAMAAAAAAPn/AQAIAAMAAAABAPn/AQAJAAMAAAACAPn/AQAJAAMAAAADAPn/AQAJAAMAAAAEAPn/AQAFAAIAAAAFAPn/AQAGAAIAAAAGAPn/AQAJAAMAAAAHAPn/AQAJAAMAAAAIAPn/AQAJAAMAAAAJAAMAAQAAAAEAAAD9//7/AQAKAAAAAAD9////AQAJAAIAAAD9/wAAAQAJAAMAAAD+//7/AQAKAAAAAAD+////AQAJAAIAAAD+/wAAAQAJAAMAAAD//wAAAQAGAAMAAAD/////AQALAAIAAAD///7/AQALAAAAAAAAAAAAAQACAAMAAAABAAAAAQACAAMAAAACAAAAAQACAAMAAAAJAPz/AQAAAAEAAAAJAP3/AQAAAAEAAAAEAPr/AQAIAAEAAAAEAPv/AQAIAAMAAAAFAPv/AQALAAMAAAAFAPr/AQALAAIAAAA=")
+tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQAKAAAAAAD4//j/AQAKAAAAAAD2//v/AQAAAAIAAAD2//r/AQAEAAIAAAD2//n/AQAIAAEAAAD5//j/AQAKAAAAAAD6//j/AQAKAAAAAAD7//j/AQAGAAAAAAD8//j/AQACAAMAAAD9//j/AQACAAMAAAD+//j/AQACAAMAAAABAPj/AQAKAAAAAAACAPj/AQAKAAAAAAADAPj/AQAKAAAAAAAEAPj/AQAKAAAAAAAFAPj/AQAKAAAAAAAGAPj/AQAKAAAAAAAHAPj/AQAKAAAAAAAIAPj/AQAKAAAAAAAJAPj/AQALAAAAAAAJAPn/AQAHAAIAAAAJAPr/AQAAAAEAAAAJAPv/AQAAAAEAAAAJAP7/AQAAAAEAAAAJAP//AQAAAAEAAAAJAAAAAQAAAAEAAAAJAAEAAQAAAAEAAAAJAAIAAQAAAAEAAAAJAAQAAQAAAAEAAAAJAAUAAQAAAAEAAAAJAAYAAQAHAAEAAAAJAAcAAQALAAMAAAAIAAcAAQAJAAMAAAAHAAcAAQAJAAMAAAAGAAcAAQAJAAMAAAAFAAcAAQAJAAMAAAAEAAcAAQAJAAMAAAADAAcAAQAJAAMAAAACAAcAAQAJAAMAAAABAAcAAQAJAAMAAAAAAAcAAQAJAAMAAAD//wcAAQAJAAMAAAD+/wcAAQAJAAMAAAD9/wcAAQAJAAMAAAD8/wcAAQAJAAMAAAD7/wcAAQAJAAMAAAD6/wcAAQAJAAMAAAD5/wcAAQAJAAMAAAD4/wcAAQAJAAMAAAD3/wcAAQAJAAMAAAD2/wcAAQAIAAMAAAD2/wYAAQAIAAAAAAD2/wAAAQAIAAMAAAD2////AQAIAAEAAAD2//7/AQAIAAAAAAD///j/AQACAAMAAAAAAPj/AQAFAAAAAAD3////AQALAAIAAAD3/wAAAQAGAAMAAAD3//7/AQALAAAAAAD4/wAAAQACAAMAAAD5/wAAAQACAAMAAAD6/wAAAQACAAMAAAD7/wAAAQACAAMAAAD8/wAAAQAFAAMAAAD8////AQAIAAEAAAD8//7/AQAIAAAAAAAFAP7/AQALAAAAAAAEAP7/AQAIAAAAAAADAAAAAQACAAMAAAAFAP//AQALAAIAAAAEAP//AQAIAAEAAAAEAAAAAQAFAAMAAAAFAAAAAQALAAMAAAD3/wYAAQAKAAAAAAD4/wYAAQAKAAAAAAD5/wYAAQAKAAAAAAD6/wYAAQAKAAAAAAD7/wYAAQAKAAAAAAD8/wYAAQAKAAAAAAD9/wYAAQAKAAAAAAD+/wYAAQAKAAAAAAD//wYAAQAKAAAAAAAAAAYAAQAKAAAAAAABAAYAAQAKAAAAAAACAAYAAQAKAAAAAAADAAYAAQAKAAAAAAAEAAYAAQAKAAAAAAAFAAYAAQAKAAAAAAAGAAYAAQAKAAAAAAAHAAYAAQAKAAAAAAAIAAYAAQAKAAAAAAD3//n/AQAJAAIAAAD4//n/AQAJAAIAAAD5//n/AQAJAAIAAAD6//n/AQAJAAIAAAD7//n/AQALAAIAAAAAAPn/AQAIAAEAAAABAPn/AQAJAAIAAAACAPn/AQAJAAIAAAADAPn/AQAJAAIAAAAEAPn/AQAJAAIAAAAFAPn/AQAGAAIAAAAGAPn/AQAJAAMAAAAHAPn/AQAJAAMAAAAIAPn/AQAJAAMAAAAJAAMAAQAAAAEAAAD9//7/AQAKAAAAAAD9////AQAJAAIAAAD9/wAAAQAJAAMAAAD+//7/AQAKAAAAAAD+////AQAJAAIAAAD+/wAAAQAJAAMAAAD//wAAAQAGAAMAAAD/////AQALAAIAAAD///7/AQALAAAAAAAAAAAAAQACAAMAAAABAAAAAQACAAMAAAACAAAAAQACAAMAAAAJAPz/AQAAAAEAAAAJAP3/AQAAAAEAAAAEAPr/AQAFAAIAAAAEAPv/AQAIAAMAAAAFAPv/AQALAAMAAAAFAPr/AQALAAIAAAD3//r/AQAJAAMAAAD4//r/AQAJAAMAAAD5//r/AQAJAAMAAAD6//r/AQAJAAMAAAD7//r/AQALAAMAAAAAAPr/AQAIAAMAAAABAPr/AQAJAAMAAAACAPr/AQAJAAMAAAADAPr/AQAJAAMAAAA=")
 
 [node name="Spike" parent="RoomManager/TileMapLayer3" unique_id=766193893 instance=ExtResource("4_pnvjf")]
-position = Vector2(-56, -120)
+position = Vector2(-56, -104)
 flipped = true
 
 [node name="Spike2" parent="RoomManager/TileMapLayer3" unique_id=708686952 instance=ExtResource("4_pnvjf")]
-position = Vector2(-40, -120)
+position = Vector2(-40, -104)
 flipped = true
 
 [node name="Spike3" parent="RoomManager/TileMapLayer3" unique_id=708282355 instance=ExtResource("4_pnvjf")]
-position = Vector2(-24, -120)
+position = Vector2(-24, -104)
 flipped = true
 
 [node name="Spike4" parent="RoomManager/TileMapLayer3" unique_id=2009932475 instance=ExtResource("4_pnvjf")]
-position = Vector2(-8, -120)
+position = Vector2(-8, -104)
 flipped = true
 
 [node name="Spike5" parent="RoomManager/TileMapLayer3" unique_id=1726783900 instance=ExtResource("4_pnvjf")]
@@ -290,16 +290,16 @@ position = Vector2(-88, -24)
 position = Vector2(-72, -24)
 
 [node name="Vanishing_Platform5" parent="RoomManager/TileMapLayer3" unique_id=827051278 instance=ExtResource("6_u45fp")]
-position = Vector2(-56, -104)
+position = Vector2(-56, -88)
 
 [node name="Vanishing_Platform6" parent="RoomManager/TileMapLayer3" unique_id=26695923 instance=ExtResource("6_u45fp")]
-position = Vector2(-40, -104)
+position = Vector2(-40, -88)
 
 [node name="Vanishing_Platform7" parent="RoomManager/TileMapLayer3" unique_id=1938545891 instance=ExtResource("6_u45fp")]
-position = Vector2(-24, -104)
+position = Vector2(-24, -88)
 
 [node name="Vanishing_Platform8" parent="RoomManager/TileMapLayer3" unique_id=80060780 instance=ExtResource("6_u45fp")]
-position = Vector2(-8, -104)
+position = Vector2(-8, -88)
 
 [node name="Vanishing_Platform9" parent="RoomManager/TileMapLayer3" unique_id=970714073 instance=ExtResource("6_u45fp")]
 position = Vector2(8, -24)
@@ -342,7 +342,6 @@ tile_map_data = PackedByteArray("AAD2//v/AQAAAAEAAAD2//r/AQAAAAEAAAD2//n/AQABAAA
 
 [node name="Checkpoint2" parent="RoomManager/TileMapLayer5" unique_id=1578816083 instance=ExtResource("6_6g8e2")]
 position = Vector2(112, -56)
-flipped = true
 
 [node name="TileMapLayer6" parent="RoomManager" unique_id=1191251514 instance=ExtResource("3_6g8e2")]
 position = Vector2(0, 720)
@@ -462,7 +461,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var2" parent="RoomManager/TileMapLayer7" unique_id=1561267184 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -104)
-offSet = 0.2
+offSet = 0.1
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var2" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -472,7 +471,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var3" parent="RoomManager/TileMapLayer7" unique_id=77864303 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -88)
-offSet = 0.4
+offSet = 0.2
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var3" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -482,7 +481,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var4" parent="RoomManager/TileMapLayer7" unique_id=2056936065 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -72)
-offSet = 0.6
+offSet = 0.3
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var4" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -492,7 +491,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var5" parent="RoomManager/TileMapLayer7" unique_id=2047971880 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -56)
-offSet = 0.8
+offSet = 0.4
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var5" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -502,7 +501,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var6" parent="RoomManager/TileMapLayer7" unique_id=622824646 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -40)
-offSet = 1.0
+offSet = 0.5
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var6" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -512,7 +511,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var7" parent="RoomManager/TileMapLayer7" unique_id=1891818339 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -24)
-offSet = 1.2
+offSet = 0.6
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var7" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -522,7 +521,7 @@ position = Vector2(272, 96)
 
 [node name="Moving_Platform_Var8" parent="RoomManager/TileMapLayer7" unique_id=1647472756 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -8)
-offSet = 1.4
+offSet = 0.7
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer7/Moving_Platform_Var8" index="0" unique_id=199387847]
 position = Vector2(112, 96)
@@ -536,7 +535,7 @@ flipped = true
 
 [node name="TileMapLayer8" parent="RoomManager" unique_id=1794931827 instance=ExtResource("3_6g8e2")]
 position = Vector2(320, 960)
-tile_map_data = PackedByteArray("AAD2//v/AQAIAAEAAAD2//r/AQAIAAEAAAD2//n/AQAIAAAAAAAJAPn/AQALAAAAAAAJAPr/AQALAAIAAAAJAPv/AQALAAIAAAAJAP7/AQALAAIAAAAJAP//AQALAAIAAAAJAAAAAQALAAIAAAAJAAEAAQALAAIAAAAJAAIAAQALAAMAAAAJAAYAAQALAAAAAAAJAAcAAQALAAMAAAAIAAcAAQAJAAMAAAAHAAcAAQAJAAMAAAAGAAcAAQAJAAMAAAAFAAcAAQAJAAMAAAAEAAcAAQAJAAMAAAADAAcAAQAJAAMAAAACAAcAAQAJAAMAAAABAAcAAQAJAAMAAAAAAAcAAQAJAAMAAAD//wcAAQAJAAMAAAD+/wcAAQAJAAMAAAD9/wcAAQAJAAMAAAD8/wcAAQAJAAMAAAD7/wcAAQAJAAMAAAD6/wcAAQAIAAMAAAD2/wcAAQAAAAIAAAD2/wYAAQAAAAEAAAD2/wUAAQAAAAEAAAD2/wQAAQAAAAEAAAD2/wMAAQAAAAEAAAD2/wIAAQAEAAIAAAD2/wEAAQAIAAEAAAD2/wAAAQAIAAEAAAD2////AQAIAAEAAAD2//7/AQAIAAEAAAD2//3/AQAIAAEAAAD2//z/AQAIAAEAAAD3////AQAJAAIAAAD3/wAAAQAJAAIAAAD3//7/AQAJAAIAAAD4//7/AQAJAAIAAAD4////AQAJAAIAAAD4/wAAAQAJAAIAAAD3/wEAAQAJAAIAAAD4/wEAAQAJAAIAAAD5//7/AQAJAAIAAAD5////AQAJAAIAAAD5/wAAAQAJAAIAAAD5/wEAAQAJAAIAAAD6/wEAAQAJAAIAAAD6/wAAAQAJAAIAAAD6////AQAJAAIAAAD6//7/AQAJAAIAAAD7//7/AQALAAIAAAD7////AQALAAIAAAD7/wAAAQALAAIAAAD7/wEAAQALAAIAAAAIAP7/AQAIAAEAAAAIAAAAAQAIAAEAAAAIAP//AQAIAAEAAAAIAAEAAQAIAAEAAAD6/wYAAQAIAAAAAAD7/wYAAQAKAAAAAAD8/wYAAQAKAAAAAAD9/wYAAQAKAAAAAAD+/wYAAQAKAAAAAAD//wYAAQAKAAAAAAAAAAYAAQAKAAAAAAABAAYAAQAKAAAAAAACAAYAAQAKAAAAAAADAAYAAQAKAAAAAAAEAAYAAQAKAAAAAAAFAAYAAQAKAAAAAAAGAAYAAQAKAAAAAAAHAAYAAQAKAAAAAAAIAAYAAQAKAAAAAAD3//n/AQALAAAAAAAIAPn/AQAIAAAAAAAJAPz/AQALAAIAAAAJAP3/AQALAAIAAAD3//r/AQALAAIAAAD3//v/AQALAAIAAAD3//z/AQAGAAEAAAD4//z/AQAKAAAAAAD5//z/AQAKAAAAAAD6//z/AQAKAAAAAAD7//z/AQAKAAAAAAD7//3/AQAGAAIAAAD6//3/AQAJAAIAAAD5//3/AQAJAAIAAAD4//3/AQAJAAIAAAD3//3/AQAJAAIAAAAIAPz/AQAFAAEAAAAIAP3/AQAFAAIAAAAIAPr/AQAIAAEAAAAIAPv/AQAIAAEAAAAIAAIAAQAIAAMAAAAGAP3/AQAJAAMAAAAHAP3/AQAJAAMAAAAHAPz/AQAKAAAAAAAGAPz/AQAKAAAAAAAFAPz/AQAEAAEAAAAFAP3/AQAIAAMAAAAFAPv/AQAAAAAAAAACAPv/AQALAAAAAAACAPz/AQALAAIAAAACAP3/AQALAAMAAAABAP3/AQAIAAMAAAABAPz/AQAIAAEAAAABAPv/AQAIAAAAAAD+//v/AQALAAAAAAD+//z/AQALAAIAAAD+//3/AQALAAMAAAD9//3/AQAJAAMAAAD9//z/AQAFAAEAAAD9//v/AQAIAAAAAAD8//z/AQAKAAAAAAD8//3/AQAJAAMAAAD7/wIAAQALAAMAAAD6/wIAAQAJAAMAAAD5/wIAAQAJAAMAAAD4/wIAAQAJAAMAAAD3/wIAAQAJAAMAAAA=")
+tile_map_data = PackedByteArray("AAD2//v/AQAIAAEAAAD2//r/AQAIAAEAAAD2//n/AQAIAAAAAAAJAPn/AQALAAAAAAAJAPr/AQALAAIAAAAJAPv/AQALAAIAAAAJAP7/AQALAAIAAAAJAP//AQALAAIAAAAJAAAAAQALAAIAAAAJAAEAAQALAAIAAAAJAAIAAQALAAMAAAAJAAYAAQALAAAAAAAJAAcAAQALAAMAAAAIAAcAAQAJAAMAAAAHAAcAAQAJAAMAAAAGAAcAAQAJAAMAAAAFAAcAAQAJAAMAAAAEAAcAAQAJAAMAAAADAAcAAQAJAAMAAAACAAcAAQAJAAMAAAABAAcAAQAJAAMAAAAAAAcAAQAJAAMAAAD//wcAAQAJAAMAAAD+/wcAAQAJAAMAAAD9/wcAAQAJAAMAAAD8/wcAAQAJAAMAAAD7/wcAAQAJAAMAAAD6/wcAAQAJAAMAAAD5/wcAAQAIAAMAAAD2/wcAAQAAAAIAAAD2/wYAAQAAAAEAAAD2/wUAAQAAAAEAAAD2/wQAAQAAAAEAAAD2/wMAAQAAAAEAAAD2/wIAAQAEAAIAAAD2/wEAAQAIAAEAAAD2/wAAAQAIAAEAAAD2////AQAIAAEAAAD2//7/AQAIAAEAAAD2//3/AQAIAAEAAAD2//z/AQAIAAEAAAD3////AQAJAAIAAAD3/wAAAQAJAAIAAAD3//7/AQAJAAIAAAD4//7/AQAJAAIAAAD4////AQAJAAIAAAD4/wAAAQAJAAIAAAD3/wEAAQAJAAIAAAD4/wEAAQAJAAIAAAD5//7/AQAJAAIAAAD5////AQAJAAIAAAD5/wAAAQAJAAIAAAD5/wEAAQAJAAIAAAD6/wEAAQAJAAIAAAD6/wAAAQAJAAIAAAD6////AQAJAAIAAAD6//7/AQAJAAIAAAD7//7/AQALAAIAAAD7////AQALAAIAAAD7/wAAAQALAAIAAAD7/wEAAQALAAIAAAAIAP7/AQAIAAEAAAAIAAAAAQAIAAEAAAAIAP//AQAIAAEAAAAIAAEAAQAIAAEAAAD5/wYAAQAIAAAAAAD6/wYAAQAKAAAAAAD7/wYAAQAKAAAAAAD8/wYAAQAKAAAAAAD9/wYAAQAKAAAAAAD+/wYAAQAKAAAAAAD//wYAAQAKAAAAAAAAAAYAAQAKAAAAAAABAAYAAQAKAAAAAAACAAYAAQAKAAAAAAADAAYAAQAKAAAAAAAEAAYAAQAKAAAAAAAFAAYAAQAKAAAAAAAGAAYAAQAKAAAAAAAHAAYAAQAKAAAAAAAIAAYAAQAKAAAAAAD3//n/AQALAAAAAAAIAPn/AQAIAAAAAAAJAPz/AQALAAIAAAAJAP3/AQALAAIAAAD3//r/AQALAAIAAAD3//v/AQALAAIAAAD3//z/AQAGAAEAAAD4//z/AQAKAAAAAAD5//z/AQAKAAAAAAD6//z/AQAKAAAAAAD7//z/AQAKAAAAAAD7//3/AQAGAAIAAAD6//3/AQAJAAIAAAD5//3/AQAJAAIAAAD4//3/AQAJAAIAAAD3//3/AQAJAAIAAAAIAPz/AQAFAAEAAAAIAP3/AQAFAAIAAAAIAPr/AQAIAAEAAAAIAPv/AQAIAAEAAAAIAAIAAQAIAAMAAAAGAP3/AQAJAAMAAAAHAP3/AQAJAAMAAAAHAPz/AQAKAAAAAAAGAPz/AQAKAAAAAAAFAPz/AQAEAAEAAAAFAP3/AQAIAAMAAAAFAPv/AQAAAAAAAAACAPv/AQALAAAAAAACAPz/AQALAAIAAAACAP3/AQALAAMAAAABAP3/AQAIAAMAAAABAPz/AQAIAAEAAAABAPv/AQAIAAAAAAD+//v/AQALAAAAAAD+//z/AQALAAIAAAD+//3/AQALAAMAAAD9//3/AQAJAAMAAAD9//z/AQAFAAEAAAD9//v/AQAIAAAAAAD8//z/AQAKAAAAAAD8//3/AQAJAAMAAAD7/wIAAQALAAMAAAD6/wIAAQAJAAMAAAD5/wIAAQAJAAMAAAD4/wIAAQAJAAMAAAD3/wIAAQAJAAMAAAA=")
 
 [node name="Spike" parent="RoomManager/TileMapLayer8" unique_id=635280353 instance=ExtResource("4_pnvjf")]
 position = Vector2(-120, -72)
@@ -580,8 +579,274 @@ position = Vector2(160, 64)
 [node name="EndPos" parent="RoomManager/TileMapLayer8/Moving_Platform_Var2" index="1" unique_id=751589911]
 position = Vector2(16, 64)
 
+[node name="TileMapLayer9" parent="RoomManager" unique_id=1191407561 instance=ExtResource("3_6g8e2")]
+position = Vector2(320, 1200)
+tile_map_data = PackedByteArray("AAD2//j/AQAAAAAAAAD2//v/AQAEAAEAAAD2//r/AQAAAAEAAAD2//n/AQAAAAEAAAAJAPn/AQALAAAAAAAJAPr/AQALAAIAAAAJAPv/AQALAAIAAAAJAP7/AQALAAIAAAAJAP//AQALAAIAAAAJAAAAAQALAAIAAAAJAAEAAQALAAIAAAAJAAIAAQALAAIAAAAJAAQAAQALAAIAAAAJAAUAAQALAAIAAAAJAAYAAQALAAMAAAAIAAcAAQAAAAIAAAADAAcAAQALAAMAAAACAAcAAQAIAAMAAAD9/wcAAQALAAMAAAD8/wcAAQAIAAMAAAD3/wcAAQAAAAIAAAD2/wYAAQAIAAMAAAD2/wUAAQAIAAEAAAD2/wQAAQAIAAEAAAD2/wMAAQAIAAEAAAD2/wIAAQAIAAEAAAD2/wEAAQAIAAEAAAD2/wAAAQAIAAEAAAD2////AQAIAAEAAAD2//7/AQAIAAEAAAD2//3/AQAIAAEAAAD2//z/AQAIAAEAAAD3////AQALAAIAAAD3/wAAAQALAAIAAAD3//7/AQALAAIAAAD3/wEAAQALAAIAAAD8/wEAAQAIAAEAAAD8/wAAAQAIAAEAAAD8////AQAIAAEAAAD8//7/AQAIAAEAAAAIAP7/AQAIAAEAAAADAP7/AQALAAIAAAADAP//AQALAAIAAAADAAAAAQALAAIAAAADAAEAAQALAAIAAAAIAAAAAQAIAAEAAAAIAP//AQAIAAEAAAAIAAEAAQAIAAEAAAD3/wYAAQAHAAIAAAD8/wYAAQAIAAEAAAD9/wYAAQALAAIAAAACAAYAAQAIAAEAAAADAAYAAQALAAIAAAAIAAYAAQAEAAIAAAD8//n/AQAIAAAAAAD9//n/AQALAAAAAAAIAPn/AQAIAAAAAAAJAAMAAQALAAIAAAAJAPz/AQALAAIAAAAJAP3/AQALAAIAAAD9//7/AQALAAIAAAD9////AQALAAIAAAD9/wAAAQALAAIAAAD9/wEAAQALAAIAAAACAP7/AQAIAAEAAAACAP//AQAIAAEAAAACAAAAAQAIAAEAAAACAAEAAQAIAAEAAAD8//3/AQAIAAEAAAD9//3/AQALAAIAAAACAP3/AQAIAAEAAAADAP3/AQALAAIAAAAIAPz/AQAIAAEAAAAIAP3/AQAIAAEAAAAIAPv/AQAIAAEAAAAIAPr/AQAIAAEAAAAIAAIAAQAIAAEAAAAIAAMAAQAIAAEAAAAIAAQAAQAIAAEAAAAIAAUAAQAIAAEAAAD3/wIAAQALAAIAAAD3/wMAAQALAAIAAAD3/wQAAQALAAIAAAD3/wUAAQALAAIAAAD8/wIAAQAIAAEAAAD8/wMAAQAIAAEAAAD8/wQAAQAIAAEAAAD8/wUAAQAIAAEAAAD9/wUAAQALAAIAAAD9/wQAAQALAAIAAAD9/wMAAQALAAIAAAD9/wIAAQALAAIAAAACAAIAAQAIAAEAAAACAAMAAQAIAAEAAAACAAQAAQAIAAEAAAACAAUAAQAIAAEAAAADAAUAAQALAAIAAAADAAQAAQALAAIAAAADAAMAAQALAAIAAAADAAIAAQALAAIAAAD3//3/AQALAAIAAAD8//z/AQAIAAEAAAD8//v/AQAIAAEAAAD8//r/AQAIAAEAAAD9//r/AQALAAIAAAD9//v/AQALAAIAAAD9//z/AQALAAIAAAACAPv/AQAIAAAAAAACAPz/AQAIAAEAAAADAPz/AQALAAIAAAADAPv/AQALAAAAAAD3//z/AQALAAIAAAD3//v/AQAGAAAAAAD4//v/AQADAAMAAAA=")
+
+[node name="Moving_Platform_Var" parent="RoomManager/TileMapLayer9" unique_id=942483285 instance=ExtResource("5_eudka")]
+position = Vector2(-160, -112)
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer9/Moving_Platform_Var" index="0" unique_id=199387847]
+position = Vector2(80, 264)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer9/Moving_Platform_Var" index="1" unique_id=751589911]
+position = Vector2(80, 376)
+
+[node name="Moving_Platform_Var2" parent="RoomManager/TileMapLayer9" unique_id=869360338 instance=ExtResource("5_eudka")]
+position = Vector2(-160, -112)
+moveTime = 0.75
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer9/Moving_Platform_Var2" index="0" unique_id=199387847]
+position = Vector2(144, 8)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer9/Moving_Platform_Var2" index="1" unique_id=751589911]
+position = Vector2(144, 216)
+
+[node name="Moving_Platform_Var3" parent="RoomManager/TileMapLayer9" unique_id=351775056 instance=ExtResource("5_eudka")]
+position = Vector2(-160, -112)
+moveTime = 0.75
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer9/Moving_Platform_Var3" index="0" unique_id=199387847]
+position = Vector2(240, 264)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer9/Moving_Platform_Var3" index="1" unique_id=751589911]
+position = Vector2(240, 424)
+
+[node name="Moving_Platform_Var4" parent="RoomManager/TileMapLayer9" unique_id=1902486217 instance=ExtResource("5_eudka")]
+position = Vector2(-160, -112)
+moveTime = 1.2
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer9/Moving_Platform_Var4" index="0" unique_id=199387847]
+position = Vector2(48, 232)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer9/Moving_Platform_Var4" index="1" unique_id=751589911]
+position = Vector2(80, 232)
+
+[node name="Moving_Platform_Var5" parent="RoomManager/TileMapLayer9" unique_id=529841658 instance=ExtResource("5_eudka")]
+position = Vector2(-160, -112)
+moveTime = 1.2
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer9/Moving_Platform_Var5" index="0" unique_id=199387847]
+position = Vector2(176, 232)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer9/Moving_Platform_Var5" index="1" unique_id=751589911]
+position = Vector2(144, 232)
+
+[node name="Moving_Platform_Var6" parent="RoomManager/TileMapLayer9" unique_id=1767699888 instance=ExtResource("5_eudka")]
+position = Vector2(-160, -112)
+moveTime = 1.2
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer9/Moving_Platform_Var6" index="0" unique_id=199387847]
+position = Vector2(240, 232)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer9/Moving_Platform_Var6" index="1" unique_id=751589911]
+position = Vector2(272, 232)
+
+[node name="TileMapLayer10" parent="RoomManager" unique_id=1563317103 instance=ExtResource("3_6g8e2")]
+position = Vector2(320, 1440)
+tile_map_data = PackedByteArray("AAD2//j/AQAAAAAAAAD2//v/AQAIAAEAAAD2//r/AQAIAAEAAAD2//n/AQAEAAEAAAAJAPj/AQAAAAAAAAAJAPn/AQAHAAEAAAAJAPr/AQALAAIAAAAJAPv/AQALAAIAAAAJAP7/AQALAAIAAAAJAP//AQALAAIAAAAJAAAAAQALAAIAAAAJAAEAAQALAAIAAAAJAAIAAQALAAIAAAAJAAQAAQALAAIAAAAJAAUAAQALAAIAAAAJAAYAAQALAAIAAAAJAAcAAQALAAMAAAAIAAcAAQAFAAMAAAAHAAcAAQACAAMAAAAGAAcAAQACAAMAAAAFAAcAAQACAAMAAAAEAAcAAQACAAMAAAADAAcAAQACAAMAAAACAAcAAQACAAMAAAABAAcAAQACAAMAAAAAAAcAAQACAAMAAAD//wcAAQACAAMAAAD+/wcAAQACAAMAAAD9/wcAAQACAAMAAAD8/wcAAQACAAMAAAD7/wcAAQACAAMAAAD6/wcAAQACAAMAAAD5/wcAAQACAAMAAAD4/wcAAQACAAMAAAD3/wcAAQACAAMAAAD2/wcAAQABAAMAAAD2/wQAAQAIAAMAAAD2/wMAAQAIAAEAAAD2/wIAAQAIAAEAAAD2/wEAAQAIAAEAAAD2/wAAAQAIAAEAAAD2////AQAIAAEAAAD2//7/AQAIAAEAAAD2//3/AQAIAAEAAAD2//z/AQAIAAEAAAD3////AQALAAIAAAD3/wAAAQALAAIAAAD3//7/AQALAAIAAAD3/wEAAQALAAIAAAD8/wEAAQAIAAMAAAD8/wAAAQAIAAEAAAD8////AQAIAAEAAAD8//7/AQAIAAEAAAAIAP7/AQAIAAEAAAADAP7/AQALAAIAAAADAP//AQALAAIAAAADAAAAAQALAAIAAAADAAEAAQALAAIAAAAIAAAAAQAIAAEAAAAIAP//AQAIAAEAAAAIAAEAAQAIAAEAAAAIAAYAAQAIAAEAAAD3//n/AQALAAAAAAD8//n/AQAIAAAAAAD9//n/AQALAAAAAAACAPn/AQAIAAAAAAADAPn/AQALAAAAAAAIAPn/AQAIAAAAAAAJAAMAAQALAAIAAAAJAPz/AQALAAIAAAAJAP3/AQALAAIAAAACAP7/AQAIAAEAAAACAP//AQAIAAEAAAACAAAAAQAIAAEAAAACAAEAAQAIAAEAAAD8//3/AQAIAAEAAAD9//3/AQALAAIAAAACAP3/AQAIAAEAAAADAP3/AQALAAIAAAAIAPz/AQAIAAEAAAAIAP3/AQAIAAEAAAAIAPv/AQAIAAEAAAAIAPr/AQAIAAEAAAAIAAIAAQAIAAEAAAAIAAMAAQAIAAEAAAAIAAQAAQAIAAEAAAAIAAUAAQAIAAEAAAD3/wIAAQALAAIAAAD3/wMAAQALAAIAAAD3/wQAAQAGAAMAAAACAAIAAQAIAAEAAAADAAIAAQALAAIAAAD3//3/AQALAAIAAAD8//z/AQAIAAEAAAD8//v/AQAIAAEAAAD8//r/AQAIAAEAAAD9//r/AQALAAIAAAD9//v/AQALAAIAAAD9//z/AQALAAIAAAD3//r/AQALAAIAAAD3//v/AQALAAIAAAD3//z/AQALAAIAAAACAPz/AQAIAAEAAAACAPv/AQAIAAEAAAACAPr/AQAIAAEAAAADAPr/AQALAAIAAAADAPv/AQALAAIAAAADAPz/AQALAAIAAAD4/wQAAQACAAMAAAD5/wQAAQACAAMAAAD6/wQAAQACAAMAAAD7/wQAAQACAAMAAAD8/wQAAQACAAMAAAD9/wQAAQACAAMAAAD+/wQAAQACAAMAAAD//wQAAQACAAMAAAAAAAQAAQACAAMAAAABAAQAAQACAAMAAAACAAQAAQAFAAMAAAADAAQAAQALAAMAAAADAAMAAQALAAIAAAACAAMAAQAIAAEAAAD9////AQALAAIAAAD9//7/AQALAAIAAAD9/wEAAQALAAMAAAD9/wAAAQALAAIAAAA=")
+
+[node name="Checkpoint" parent="RoomManager/TileMapLayer10" unique_id=466656065 instance=ExtResource("6_6g8e2")]
+position = Vector2(-136, -328)
+
+[node name="Checkpoint2" parent="RoomManager/TileMapLayer10" unique_id=1483221411 instance=ExtResource("6_6g8e2")]
+position = Vector2(-144, 104)
+
+[node name="TileMapLayer11" parent="RoomManager" unique_id=1616954466 instance=ExtResource("3_6g8e2")]
+position = Vector2(0, 1440)
+tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQALAAAAAAD2//v/AQAIAAEAAAD2//r/AQAIAAEAAAD2//n/AQAIAAEAAAAIAPj/AQAIAAAAAAAJAPj/AQALAAAAAAAJAPn/AQALAAIAAAAJAPr/AQALAAIAAAAJAPv/AQALAAIAAAAJAP7/AQALAAIAAAAJAP//AQALAAIAAAAJAAAAAQALAAIAAAAJAAEAAQALAAIAAAAJAAIAAQALAAIAAAAJAAQAAQALAAMAAAAJAAcAAQADAAMAAAAIAAcAAQACAAMAAAAHAAcAAQACAAMAAAAGAAcAAQACAAMAAAAFAAcAAQACAAMAAAAEAAcAAQACAAMAAAADAAcAAQACAAMAAAACAAcAAQACAAMAAAABAAcAAQACAAMAAAAAAAcAAQACAAMAAAD//wcAAQACAAMAAAD+/wcAAQACAAMAAAD9/wcAAQACAAMAAAD8/wcAAQACAAMAAAD7/wcAAQACAAMAAAD6/wcAAQACAAMAAAD5/wcAAQACAAMAAAD4/wcAAQACAAMAAAD3/wcAAQACAAMAAAD2/wcAAQABAAMAAAD2/wQAAQAIAAMAAAD2/wMAAQAIAAEAAAD2/wIAAQAIAAEAAAD2/wEAAQAIAAEAAAD2/wAAAQAIAAEAAAD2////AQAIAAEAAAD2//7/AQAIAAEAAAD2//3/AQAIAAEAAAD2//z/AQAIAAEAAAD3////AQALAAIAAAD3/wAAAQALAAIAAAD3//7/AQALAAIAAAD3/wEAAQALAAIAAAD8/wEAAQAIAAEAAAD8/wAAAQAIAAEAAAD8////AQAIAAEAAAD8//7/AQAIAAEAAAAIAP7/AQAIAAEAAAADAP7/AQALAAIAAAADAP//AQALAAIAAAADAAAAAQALAAIAAAADAAEAAQALAAIAAAAIAAAAAQAIAAEAAAAIAP//AQAIAAEAAAAIAAEAAQAIAAEAAAD3//n/AQALAAIAAAAIAPn/AQAIAAEAAAAJAAMAAQALAAIAAAAJAPz/AQALAAIAAAAJAP3/AQALAAIAAAACAP7/AQAIAAEAAAACAP//AQAIAAEAAAACAAAAAQAIAAEAAAACAAEAAQAIAAEAAAD8//3/AQAIAAAAAAD9//3/AQALAAAAAAACAP3/AQAIAAAAAAADAP3/AQALAAAAAAAIAPz/AQAIAAEAAAAIAP3/AQAIAAEAAAAIAPv/AQAIAAEAAAAIAPr/AQAIAAEAAAAIAAIAAQAIAAEAAAAIAAMAAQAIAAEAAAAIAAQAAQAIAAMAAAD3/wIAAQAGAAEAAAD3/wMAAQAGAAIAAAD3/wQAAQALAAMAAAACAAIAAQAFAAEAAAADAAIAAQALAAIAAAD3//3/AQALAAIAAAD3//r/AQALAAIAAAD3//v/AQALAAIAAAD3//z/AQALAAIAAAADAAMAAQALAAMAAAACAAMAAQAJAAMAAAD9////AQALAAIAAAD9//7/AQALAAIAAAD9/wEAAQALAAIAAAD9/wAAAQALAAIAAAD8/wIAAQAFAAEAAAD8/wMAAQAJAAMAAAD9/wMAAQAJAAMAAAD9/wIAAQAGAAEAAAD+/wIAAQALAAAAAAD+/wMAAQALAAMAAAABAAIAAQAIAAAAAAABAAMAAQAIAAMAAAD7/wMAAQAJAAMAAAD7/wIAAQAKAAAAAAD6/wIAAQAKAAAAAAD5/wIAAQAKAAAAAAD4/wIAAQAKAAAAAAD4/wMAAQAJAAMAAAD5/wMAAQAJAAMAAAD6/wMAAQAJAAMAAAA=")
+
+[node name="Moving_Platform_Var" parent="RoomManager/TileMapLayer11" unique_id=73465605 instance=ExtResource("7_u45fp")]
+alwaysActive = true
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer11/Moving_Platform_Var" index="0" unique_id=199387847]
+position = Vector2(104, 56)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer11/Moving_Platform_Var" index="1" unique_id=751589911]
+position = Vector2(104, -152)
+
+[node name="Moving_Platform_Var2" parent="RoomManager/TileMapLayer11" unique_id=1344743667 instance=ExtResource("7_u45fp")]
+alwaysActive = true
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer11/Moving_Platform_Var2" index="0" unique_id=199387847]
+position = Vector2(-104, -88)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer11/Moving_Platform_Var2" index="1" unique_id=751589911]
+position = Vector2(104, -88)
+
+[node name="Moving_Platform_Var3" parent="RoomManager/TileMapLayer11" unique_id=1558988526 instance=ExtResource("5_eudka")]
+moveTime = 3.0
+alwaysActive = true
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer11/Moving_Platform_Var3" index="0" unique_id=199387847]
+position = Vector2(-104, -80)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer11/Moving_Platform_Var3" index="1" unique_id=751589911]
+position = Vector2(104, -80)
+
+[node name="Spike13" parent="RoomManager/TileMapLayer11" unique_id=1059557894 instance=ExtResource("4_pnvjf")]
+position = Vector2(-120, 24)
+
+[node name="Spike12" parent="RoomManager/TileMapLayer11" unique_id=382753253 instance=ExtResource("4_pnvjf")]
+position = Vector2(-104, 24)
+
+[node name="Spike11" parent="RoomManager/TileMapLayer11" unique_id=639021640 instance=ExtResource("4_pnvjf")]
+position = Vector2(-88, 24)
+
+[node name="Spike14" parent="RoomManager/TileMapLayer11" unique_id=1507302475 instance=ExtResource("4_pnvjf")]
+position = Vector2(-72, 24)
+
+[node name="Spike5" parent="RoomManager/TileMapLayer11" unique_id=1434169262 instance=ExtResource("4_pnvjf")]
+position = Vector2(-24, 24)
+
+[node name="Spike6" parent="RoomManager/TileMapLayer11" unique_id=610865543 instance=ExtResource("4_pnvjf")]
+position = Vector2(24, 24)
+
+[node name="Spike7" parent="RoomManager/TileMapLayer11" unique_id=1223682493 instance=ExtResource("4_pnvjf")]
+position = Vector2(-56, -56)
+
+[node name="Spike8" parent="RoomManager/TileMapLayer11" unique_id=898011521 instance=ExtResource("4_pnvjf")]
+position = Vector2(-40, -56)
+
+[node name="Spike9" parent="RoomManager/TileMapLayer11" unique_id=2034089796 instance=ExtResource("4_pnvjf")]
+position = Vector2(40, -56)
+
+[node name="Spike10" parent="RoomManager/TileMapLayer11" unique_id=558903808 instance=ExtResource("4_pnvjf")]
+position = Vector2(56, -56)
+
+[node name="TileMapLayer12" parent="RoomManager" unique_id=1243620343 instance=ExtResource("3_6g8e2")]
+position = Vector2(0, 1200)
+tile_map_data = PackedByteArray("AAD2//j/AQABAAAAAAD3//j/AQACAAMAAAD4//j/AQACAAMAAAD2//v/AQAAAAEAAAD2//r/AQAAAAEAAAD2//n/AQAAAAEAAAD5//j/AQACAAMAAAD6//j/AQACAAMAAAD7//j/AQACAAMAAAD8//j/AQACAAMAAAD9//j/AQACAAMAAAD+//j/AQACAAMAAAABAPj/AQACAAMAAAACAPj/AQACAAMAAAADAPj/AQACAAMAAAAEAPj/AQACAAMAAAAFAPj/AQACAAMAAAAGAPj/AQACAAMAAAAHAPj/AQACAAMAAAAIAPj/AQACAAMAAAAJAPj/AQADAAAAAAAJAPn/AQAAAAEAAAAJAPr/AQAAAAEAAAAJAPv/AQAAAAEAAAAJAP7/AQAAAAEAAAAJAP//AQAAAAEAAAAJAAAAAQAAAAEAAAAJAAEAAQAHAAEAAAAJAAIAAQALAAIAAAAJAAQAAQALAAIAAAAJAAUAAQALAAIAAAAJAAYAAQALAAIAAAAJAAcAAQALAAMAAAAIAAcAAQAIAAMAAAD3/wcAAQALAAMAAAD2/wcAAQAIAAMAAAD2/wYAAQAIAAEAAAD2/wUAAQAEAAEAAAD2/wQAAQAAAAEAAAD2/wMAAQAAAAEAAAD2/wIAAQAAAAEAAAD2/wEAAQAAAAEAAAD2/wAAAQAAAAEAAAD2////AQAAAAEAAAD2//7/AQAAAAEAAAD2//3/AQAAAAEAAAD2//z/AQAAAAEAAAD///j/AQACAAMAAAAAAPj/AQACAAMAAAD8/wEAAQAIAAIAAAADAAEAAQALAAEAAAAEAAEAAQACAAMAAAAFAAEAAQACAAMAAAAGAAEAAQACAAMAAAAHAAEAAQACAAMAAAAIAAEAAQAFAAAAAAD3/wYAAQALAAIAAAAIAAYAAQAIAAEAAAAJAAMAAQALAAIAAAADAAIAAQALAAMAAAAIAAMAAQAIAAEAAAAIAAIAAQAIAAEAAAAIAAQAAQAIAAEAAAAIAAUAAQAIAAEAAAACAAIAAQAIAAMAAAACAAEAAQAIAAIAAAD8/wIAAQAIAAMAAAD9/wIAAQALAAMAAAD9/wEAAQALAAEAAAD+/wEAAQACAAMAAAD//wEAAQACAAMAAAAAAAEAAQACAAMAAAABAAEAAQACAAMAAAD3/wUAAQAGAAAAAAD4/wUAAQACAAMAAAD5/wUAAQACAAMAAAD6/wUAAQACAAMAAAD7/wUAAQADAAMAAAD7/wEAAQABAAMAAAD8/wAAAQAIAAAAAAD9/wAAAQALAAAAAAACAAAAAQAIAAAAAAADAAAAAQALAAAAAAAJAPz/AQAAAAEAAAAJAP3/AQAAAAEAAAA=")
+
+[node name="Spike" parent="RoomManager/TileMapLayer12" unique_id=1950406715 instance=ExtResource("4_pnvjf")]
+position = Vector2(72, 40)
+flipped = true
+
+[node name="Spike2" parent="RoomManager/TileMapLayer12" unique_id=932095554 instance=ExtResource("4_pnvjf")]
+position = Vector2(88, 40)
+flipped = true
+
+[node name="Spike3" parent="RoomManager/TileMapLayer12" unique_id=247006192 instance=ExtResource("4_pnvjf")]
+position = Vector2(104, 40)
+flipped = true
+
+[node name="Spike4" parent="RoomManager/TileMapLayer12" unique_id=113152788 instance=ExtResource("4_pnvjf")]
+position = Vector2(120, 40)
+flipped = true
+
+[node name="Spike5" parent="RoomManager/TileMapLayer12" unique_id=1028474164 instance=ExtResource("4_pnvjf")]
+position = Vector2(40, 56)
+flipped = true
+
+[node name="Spike6" parent="RoomManager/TileMapLayer12" unique_id=1668514955 instance=ExtResource("4_pnvjf")]
+position = Vector2(56, 56)
+flipped = true
+
+[node name="Spike7" parent="RoomManager/TileMapLayer12" unique_id=801231619 instance=ExtResource("4_pnvjf")]
+position = Vector2(24, 40)
+flipped = true
+
+[node name="Spike8" parent="RoomManager/TileMapLayer12" unique_id=1035855626 instance=ExtResource("4_pnvjf")]
+position = Vector2(8, 40)
+flipped = true
+
+[node name="Spike9" parent="RoomManager/TileMapLayer12" unique_id=528255949 instance=ExtResource("4_pnvjf")]
+position = Vector2(-8, 40)
+flipped = true
+
+[node name="Spike10" parent="RoomManager/TileMapLayer12" unique_id=1869825080 instance=ExtResource("4_pnvjf")]
+position = Vector2(-24, 40)
+flipped = true
+
+[node name="Spike11" parent="RoomManager/TileMapLayer12" unique_id=2071382002 instance=ExtResource("4_pnvjf")]
+position = Vector2(-120, 104)
+flipped = true
+
+[node name="Spike12" parent="RoomManager/TileMapLayer12" unique_id=1194169753 instance=ExtResource("4_pnvjf")]
+position = Vector2(-104, 104)
+flipped = true
+
+[node name="Spike13" parent="RoomManager/TileMapLayer12" unique_id=1062280324 instance=ExtResource("4_pnvjf")]
+position = Vector2(-88, 104)
+flipped = true
+
+[node name="Spike14" parent="RoomManager/TileMapLayer12" unique_id=863026770 instance=ExtResource("4_pnvjf")]
+position = Vector2(-72, 104)
+flipped = true
+
+[node name="Moving_Platform_Var" parent="RoomManager/TileMapLayer12" unique_id=1368488148 instance=ExtResource("7_u45fp")]
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer12/Moving_Platform_Var" index="0" unique_id=199387847]
+position = Vector2(-112, -32)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer12/Moving_Platform_Var" index="1" unique_id=751589911]
+position = Vector2(112, -32)
+
+[node name="Moving_Platform_Var2" parent="RoomManager/TileMapLayer12" unique_id=114189816 instance=ExtResource("5_eudka")]
+moveTime = 3.0
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer12/Moving_Platform_Var2" index="0" unique_id=199387847]
+position = Vector2(-136, -24)
+
+[node name="Sprite2D" parent="RoomManager/TileMapLayer12/Moving_Platform_Var2/Moving_Platform" index="1" unique_id=230042196]
+scale = Vector2(1, 0.5)
+
+[node name="CollisionShape2D" parent="RoomManager/TileMapLayer12/Moving_Platform_Var2/Moving_Platform/DeathZone" parent_id_path=PackedInt32Array(114189816, 1567258606) index="0" unique_id=2138505691]
+scale = Vector2(0.5, 0.5)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer12/Moving_Platform_Var2" index="1" unique_id=751589911]
+position = Vector2(88, -24)
+
+[node name="Moving_Platform_Var3" parent="RoomManager/TileMapLayer12" unique_id=1755922900 instance=ExtResource("5_eudka")]
+moveTime = 3.0
+
+[node name="Moving_Platform" parent="RoomManager/TileMapLayer12/Moving_Platform_Var3" index="0" unique_id=199387847]
+position = Vector2(-88, -24)
+
+[node name="Sprite2D" parent="RoomManager/TileMapLayer12/Moving_Platform_Var3/Moving_Platform" index="1" unique_id=230042196]
+scale = Vector2(1, 0.5)
+
+[node name="CollisionShape2D" parent="RoomManager/TileMapLayer12/Moving_Platform_Var3/Moving_Platform/DeathZone" parent_id_path=PackedInt32Array(1755922900, 1567258606) index="0" unique_id=2138505691]
+scale = Vector2(0.5, 0.5)
+
+[node name="EndPos" parent="RoomManager/TileMapLayer12/Moving_Platform_Var3" index="1" unique_id=751589911]
+position = Vector2(136, -24)
+
+[node name="Spike15" parent="RoomManager/TileMapLayer12" unique_id=1464932857 instance=ExtResource("4_pnvjf")]
+position = Vector2(-24, 8)
+
+[node name="Spike16" parent="RoomManager/TileMapLayer12" unique_id=863739292 instance=ExtResource("4_pnvjf")]
+position = Vector2(-8, 8)
+
+[node name="Spike17" parent="RoomManager/TileMapLayer12" unique_id=1394055557 instance=ExtResource("4_pnvjf")]
+position = Vector2(8, 8)
+
+[node name="Spike18" parent="RoomManager/TileMapLayer12" unique_id=485676811 instance=ExtResource("4_pnvjf")]
+position = Vector2(24, 8)
+
+[node name="Spike19" parent="RoomManager/TileMapLayer12" unique_id=248628016 instance=ExtResource("4_pnvjf")]
+position = Vector2(72, 8)
+
+[node name="Spike20" parent="RoomManager/TileMapLayer12" unique_id=1141645032 instance=ExtResource("4_pnvjf")]
+position = Vector2(88, 8)
+
+[node name="Spike21" parent="RoomManager/TileMapLayer12" unique_id=970668465 instance=ExtResource("4_pnvjf")]
+position = Vector2(104, 8)
+
+[node name="Spike22" parent="RoomManager/TileMapLayer12" unique_id=1749989075 instance=ExtResource("4_pnvjf")]
+position = Vector2(120, 8)
+
+[node name="Spike23" parent="RoomManager/TileMapLayer12" unique_id=1904500927 instance=ExtResource("4_pnvjf")]
+position = Vector2(136, 8)
+
+[node name="Spike24" parent="RoomManager/TileMapLayer12" unique_id=1884084336 instance=ExtResource("4_pnvjf")]
+position = Vector2(-72, 8)
+
+[node name="TileMapLayer13" parent="RoomManager" unique_id=291942306 instance=ExtResource("3_6g8e2")]
+position = Vector2(0, 960)
+
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1617331225 node_paths=PackedStringArray("checkpoint") groups=["Player"]]
-position = Vector2(432, 856)
+position = Vector2(208, 1536)
 collision_layer = 2
 script = ExtResource("2_ny0t1")
 checkpoint = NodePath("../RoomManager/TileMapLayer/Checkpoint")
@@ -610,3 +875,15 @@ shape = SubResource("RectangleShape2D_lkjt4")
 [editable path="RoomManager/TileMapLayer8/Moving_Platform_Var"]
 [editable path="RoomManager/TileMapLayer8/Moving_Platform_Var3"]
 [editable path="RoomManager/TileMapLayer8/Moving_Platform_Var2"]
+[editable path="RoomManager/TileMapLayer9/Moving_Platform_Var"]
+[editable path="RoomManager/TileMapLayer9/Moving_Platform_Var2"]
+[editable path="RoomManager/TileMapLayer9/Moving_Platform_Var3"]
+[editable path="RoomManager/TileMapLayer9/Moving_Platform_Var4"]
+[editable path="RoomManager/TileMapLayer9/Moving_Platform_Var5"]
+[editable path="RoomManager/TileMapLayer9/Moving_Platform_Var6"]
+[editable path="RoomManager/TileMapLayer11/Moving_Platform_Var"]
+[editable path="RoomManager/TileMapLayer11/Moving_Platform_Var2"]
+[editable path="RoomManager/TileMapLayer11/Moving_Platform_Var3"]
+[editable path="RoomManager/TileMapLayer12/Moving_Platform_Var"]
+[editable path="RoomManager/TileMapLayer12/Moving_Platform_Var2"]
+[editable path="RoomManager/TileMapLayer12/Moving_Platform_Var3"]
