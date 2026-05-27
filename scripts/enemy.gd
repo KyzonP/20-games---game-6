@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @export var SPEED = 100
 @export var always_load : bool = false
+@export var flipped : bool = false
+
 var GRAVITY = 150
 
 var startPos : Vector2
@@ -13,6 +15,11 @@ var alive : bool = true
 @onready var front_ray_cast = $FrontRaycast
 
 func _ready():
+	if flipped:
+		GRAVITY *= -1
+		$GroundRaycast.target_position *= -1
+		$FrontRaycast.target_position *= -1
+	
 	startPos = global_position
 	
 	EventBus.restart.connect(reset)
