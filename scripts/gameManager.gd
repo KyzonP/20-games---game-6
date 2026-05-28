@@ -15,6 +15,7 @@ func progressLevel():
 func openExit():
 	exitOpened = true
 	
+	$Exit.remove()
 	### OPEN EXIT CODE HERE ###
 	
 func completeGame():

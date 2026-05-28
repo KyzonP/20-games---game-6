@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dupojsemf3kkv"]
 
-[ext_resource type="Script" uid="uid://1ndqej6g5tli" path="res://scripts/character.gd" id="1_uuo08"]
+[ext_resource type="Script" uid="uid://ck1aa7t00nxdn" path="res://scripts/endCharacter.gd" id="1_uuo08"]
 [ext_resource type="Texture2D" uid="uid://by85mg604ja58" path="res://assets/placeholder/SamRight.png" id="2_4p1nm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
@@ -48,7 +48,7 @@ collision_mask = 2
 script = ExtResource("1_uuo08")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=978260084]
-modulate = Color(1, 0.06666667, 1, 1)
+modulate = Color(0.25490198, 1, 0, 1)
 texture_filter = 1
 position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_rkhd4")

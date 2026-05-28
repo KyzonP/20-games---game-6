@@ -13,3 +13,4 @@ func playerDetected(body):
 		EventBus.emit_signal("changeDialogue", dialogue)
 		EventBus.emit_signal("progress")
 	
+d
