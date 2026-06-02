@@ -18,3 +18,9 @@ signal completeGame()
 
 @warning_ignore("UNUSED_SIGNAL")
 signal changeDialogue()
+
+@warning_ignore("UNUSED_SIGNAL")
+signal freeze()
+
+@warning_ignore("UNUSED_SIGNAL")
+signal unfreeze()

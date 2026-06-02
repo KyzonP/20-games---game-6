@@ -10,7 +10,13 @@ var finalPos : Vector2
 
 @export var alwaysActive : bool = false
 
+@export var small : bool = false
+
 func _ready():
+	# Change anim if small
+	if small:
+		$Moving_Platform/Sprite2D.texture = load("res://assets/hazard/SmallDeathPlatform.png")
+	
 	# Sync movement with physics engine
 	initPos = $Moving_Platform.position
 	finalPos = $EndPos.position

@@ -12,5 +12,6 @@ func playerDetected(body):
 		found = true
 		EventBus.emit_signal("changeDialogue", dialogue)
 		EventBus.emit_signal("progress")
+		
+		$Sprite2D.visible = false
 	
-d

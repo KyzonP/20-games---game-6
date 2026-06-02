@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bm3h2ot2p21pd" path="res://scripts/moving_platform_var.gd" id="1_kp2m1"]
 [ext_resource type="Texture2D" uid="uid://dt47mw121imwf" path="res://assets/placeholder/SyrFloorTileSet.png" id="2_4miix"]
+[ext_resource type="Texture2D" uid="uid://dwyl82v2eptes" path="res://assets/hazard/Platform.png" id="3_4miix"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u45fp"]
 size = Vector2(32, 8)
@@ -16,9 +17,9 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moving_Platform" unique_id=1724701219]
 shape = SubResource("RectangleShape2D_u45fp")
 
-[node name="Sprite2D" type="Sprite2D" parent="Moving_Platform" unique_id=230042196]
-scale = Vector2(2, 0.5)
-texture = ExtResource("2_4miix")
+[node name="Sprite2D2" type="Sprite2D" parent="Moving_Platform" unique_id=2004052671]
+texture_filter = 1
+texture = ExtResource("3_4miix")
 
 [node name="EndPos" type="Node2D" parent="." unique_id=751589911]
 position = Vector2(64, 0)

@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 EventBus="*uid://nhpxp7ydgb7r"
+Global="*uid://dh4f4iwv3q8a5"
+SaveLoad="*uid://c6qauukvnvg4y"
 
 [display]
 

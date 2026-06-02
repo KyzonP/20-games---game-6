@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://ck1aa7t00nxdn" path="res://scripts/endCharacter.gd" id="1_uuo08"]
 [ext_resource type="Texture2D" uid="uid://by85mg604ja58" path="res://assets/placeholder/SamRight.png" id="2_4p1nm"]
+[ext_resource type="Texture2D" uid="uid://bst17tfuh5rnc" path="res://assets/character/sam.png" id="3_tm1uf"]
+[ext_resource type="Texture2D" uid="uid://n5kqqeuenbuo" path="res://assets/character/shelah.png" id="4_6p2o3"]
+[ext_resource type="Texture2D" uid="uid://b2w62rg2jqkv7" path="res://assets/character/talia.png" id="5_v1k7x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
 atlas = ExtResource("2_4p1nm")
@@ -19,7 +22,7 @@ region = Rect2(32, 0, 16, 28)
 atlas = ExtResource("2_4p1nm")
 region = Rect2(48, 0, 16, 28)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_rkhd4"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_hmuhb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -37,6 +40,30 @@ animations = [{
 "loop": true,
 "name": &"new_animation",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_tm1uf")
+}],
+"loop": true,
+"name": &"sam",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_6p2o3")
+}],
+"loop": true,
+"name": &"shelah",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_v1k7x")
+}],
+"loop": true,
+"name": &"talia",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrhn5"]
@@ -47,12 +74,11 @@ collision_layer = 0
 collision_mask = 2
 script = ExtResource("1_uuo08")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=978260084]
-modulate = Color(0.25490198, 1, 0, 1)
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1311593784]
 texture_filter = 1
-position = Vector2(0, -2)
-sprite_frames = SubResource("SpriteFrames_rkhd4")
-animation = &"new_animation"
+position = Vector2(0, -6)
+sprite_frames = SubResource("SpriteFrames_hmuhb")
+animation = &"sam"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272001979]
 position = Vector2(0, -1)

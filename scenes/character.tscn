@@ -2,6 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://by85mg604ja58" path="res://assets/placeholder/SamRight.png" id="1_agfs1"]
 [ext_resource type="Script" uid="uid://1ndqej6g5tli" path="res://scripts/character.gd" id="1_rkhd4"]
+[ext_resource type="Texture2D" uid="uid://dnuypa4mrokn1" path="res://assets/character/fen.png" id="2_a5ia6"]
+[ext_resource type="Texture2D" uid="uid://bst17tfuh5rnc" path="res://assets/character/sam.png" id="3_0lw5n"]
+[ext_resource type="Texture2D" uid="uid://ddrl0mxrp6cko" path="res://assets/character/ragdain.png" id="3_2cgup"]
+[ext_resource type="Texture2D" uid="uid://n5kqqeuenbuo" path="res://assets/character/shelah.png" id="3_dp8ca"]
+[ext_resource type="Texture2D" uid="uid://cevmbbnuymjhb" path="res://assets/hazard/Alert.png" id="3_lrhn5"]
+[ext_resource type="Texture2D" uid="uid://b2w62rg2jqkv7" path="res://assets/character/talia.png" id="3_my7n2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
 atlas = ExtResource("1_agfs1")
@@ -23,6 +29,14 @@ region = Rect2(48, 0, 16, 28)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_a5ia6")
+}],
+"loop": true,
+"name": &"fen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ny0t1")
 }, {
 "duration": 1.0,
@@ -37,6 +51,38 @@ animations = [{
 "loop": true,
 "name": &"new_animation",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2cgup")
+}],
+"loop": true,
+"name": &"ragdain",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0lw5n")
+}],
+"loop": true,
+"name": &"sam",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_dp8ca")
+}],
+"loop": true,
+"name": &"shelah",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_my7n2")
+}],
+"loop": true,
+"name": &"talia",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrhn5"]
@@ -46,15 +92,19 @@ size = Vector2(13, 19)
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("1_rkhd4")
-dialogue = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=978260084]
-modulate = Color(0, 1, 1, 1)
 texture_filter = 1
-position = Vector2(0, -2)
+position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_rkhd4")
-animation = &"new_animation"
+animation = &"fen"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272001979]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_lrhn5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=409297553]
+z_index = 2
+texture_filter = 1
+position = Vector2(0, -32)
+texture = ExtResource("3_lrhn5")

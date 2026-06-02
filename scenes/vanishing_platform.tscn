@@ -1,7 +1,57 @@
 [gd_scene format=3 uid="uid://boxn6ya8bhevc"]
 
 [ext_resource type="Script" uid="uid://75edlqkot3wg" path="res://scripts/vanishing_platform.gd" id="1_nlgqw"]
-[ext_resource type="Texture2D" uid="uid://d5f855ntqcfm" path="res://assets/placeholder/DuReinFloorTileSet.png" id="2_507ja"]
+[ext_resource type="Texture2D" uid="uid://5jtqgxdfmkga" path="res://assets/hazard/VanishingPlatform.png" id="2_eaghg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dy3nk"]
+atlas = ExtResource("2_eaghg")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3v25d"]
+atlas = ExtResource("2_eaghg")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80hen"]
+atlas = ExtResource("2_eaghg")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ume66"]
+atlas = ExtResource("2_eaghg")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydyk4"]
+atlas = ExtResource("2_eaghg")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hul5p"]
+atlas = ExtResource("2_eaghg")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v4adr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dy3nk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3v25d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80hen")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ume66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydyk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hul5p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2grjb"]
 size = Vector2(16, 16)
@@ -13,8 +63,8 @@ size = Vector2(16, 20)
 collision_mask = 0
 script = ExtResource("1_nlgqw")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=25283106]
-texture = ExtResource("2_507ja")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=850168524]
+sprite_frames = SubResource("SpriteFrames_v4adr")
 
 [node name="SolidCollision" type="CollisionShape2D" parent="." unique_id=214188981]
 shape = SubResource("RectangleShape2D_2grjb")

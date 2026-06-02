@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bwp87pypkrf3v" path="res://scripts/death_platform.gd" id="1_31jh5"]
 [ext_resource type="Texture2D" uid="uid://dt47mw121imwf" path="res://assets/placeholder/SyrFloorTileSet.png" id="2_nyn5i"]
+[ext_resource type="Texture2D" uid="uid://bea0e2mi8h32i" path="res://assets/hazard/DeathPlatform.png" id="2_oy532"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u45fp"]
 size = Vector2(16, 8)
@@ -19,9 +20,8 @@ collision_mask = 0
 shape = SubResource("RectangleShape2D_u45fp")
 
 [node name="Sprite2D" type="Sprite2D" parent="Moving_Platform" unique_id=230042196]
-modulate = Color(1, 0.36078432, 1, 1)
-scale = Vector2(2, 0.5)
-texture = ExtResource("2_nyn5i")
+texture_filter = 1
+texture = ExtResource("2_oy532")
 
 [node name="DeathZone" type="Area2D" parent="Moving_Platform" unique_id=1567258606]
 collision_layer = 0

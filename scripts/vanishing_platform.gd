@@ -10,6 +10,9 @@ func _ready():
 	EventBus.restart.connect(reset)
 	
 func collision(_body):
+	# Start animation
+	$Sprite2D.play()
+	
 	if vanishTween:
 		vanishTween.kill()
 	
@@ -23,6 +26,10 @@ func vanishComplete():
 	
 	$SolidCollision.set_deferred("disabled", true)
 	$Area2D.set_deferred("monitoring", false)
+	
+	# Stop animation
+	$Sprite2D.stop()
+	$Sprite2D.frame = 0
 
 func reset():
 	if vanishTween:
@@ -32,3 +39,7 @@ func reset():
 	$Sprite2D.modulate = Color(1,1,1,1)
 	$SolidCollision.set_deferred("disabled", false)
 	$Area2D.set_deferred("monitoring", true)
+	
+	# Stop animation
+	$Sprite2D.stop()
+	$Sprite2D.frame = 0

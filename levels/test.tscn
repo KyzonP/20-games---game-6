@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://b20grnoyjm83l" path="res://scripts/gameManager.gd" id="1_qtvpr"]
 [ext_resource type="PackedScene" uid="uid://jxl74tbd6xmp" path="res://scenes/enemy.tscn" id="2_2grjb"]
 [ext_resource type="Script" uid="uid://dooo8slg1elp5" path="res://scripts/room_manager.gd" id="2_6g8e2"]
-[ext_resource type="Texture2D" uid="uid://by85mg604ja58" path="res://assets/placeholder/SamRight.png" id="2_lkjt4"]
 [ext_resource type="Script" uid="uid://6mxrx70gy2wh" path="res://scripts/player.gd" id="2_ny0t1"]
 [ext_resource type="PackedScene" uid="uid://cmjqv2485in03" path="res://levels/room_template.tscn" id="3_6g8e2"]
 [ext_resource type="PackedScene" uid="uid://u426ntg5kjxx" path="res://scenes/spike.tscn" id="4_pnvjf"]
@@ -12,45 +11,73 @@
 [ext_resource type="PackedScene" uid="uid://bmc4pf0krlehp" path="res://scenes/checkpoint.tscn" id="6_6g8e2"]
 [ext_resource type="PackedScene" uid="uid://boxn6ya8bhevc" path="res://scenes/vanishing_platform.tscn" id="6_u45fp"]
 [ext_resource type="PackedScene" uid="uid://pmp82dlh7h3d" path="res://scenes/moving_platform_var.tscn" id="7_u45fp"]
+[ext_resource type="Texture2D" uid="uid://y44r8slty3b2" path="res://assets/character/mairon.png" id="12_08uri"]
 [ext_resource type="PackedScene" uid="uid://donxwho7brw4o" path="res://scenes/character.tscn" id="13_drwxn"]
+[ext_resource type="Texture2D" uid="uid://doep4elnrp048" path="res://assets/character/maironwalk.png" id="13_fivcu"]
 [ext_resource type="Script" uid="uid://dell20c5gsfj1" path="res://scripts/dialogue.gd" id="14_rmkky"]
 [ext_resource type="PackedScene" uid="uid://dupojsemf3kkv" path="res://scenes/endCharacter.tscn" id="15_epu3l"]
+[ext_resource type="Script" uid="uid://bjhwl1ak10uev" path="res://scripts/ui.gd" id="16_1w0m8"]
 [ext_resource type="Script" uid="uid://euwln3apopm4" path="res://scripts/exit.gd" id="16_lqn8c"]
+[ext_resource type="Texture2D" uid="uid://dsp7r1yehs6e1" path="res://assets/ui/textbox.png" id="16_u1nm5"]
+[ext_resource type="FontFile" uid="uid://bptnrs6ljbux2" path="res://assets/fonts/PrStart.ttf" id="16_uy2g7"]
+[ext_resource type="Texture2D" uid="uid://ch7c7dgbe5fqb" path="res://assets/hazard/Gate.png" id="17_08uri"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
-atlas = ExtResource("2_lkjt4")
-region = Rect2(0, 0, 16, 28)
+[sub_resource type="AtlasTexture" id="AtlasTexture_uy2g7"]
+atlas = ExtResource("13_fivcu")
+region = Rect2(16, 0, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r4e4k"]
-atlas = ExtResource("2_lkjt4")
-region = Rect2(16, 0, 16, 28)
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1nm5"]
+atlas = ExtResource("13_fivcu")
+region = Rect2(32, 0, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pnvjf"]
-atlas = ExtResource("2_lkjt4")
-region = Rect2(32, 0, 16, 28)
+[sub_resource type="AtlasTexture" id="AtlasTexture_1w0m8"]
+atlas = ExtResource("13_fivcu")
+region = Rect2(48, 0, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6g8e2"]
-atlas = ExtResource("2_lkjt4")
-region = Rect2(48, 0, 16, 28)
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a51t"]
+atlas = ExtResource("13_fivcu")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhlpr"]
+atlas = ExtResource("13_fivcu")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5wip"]
+atlas = ExtResource("13_fivcu")
+region = Rect2(96, 0, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u45fp"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ny0t1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r4e4k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pnvjf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6g8e2")
+"texture": ExtResource("12_08uri")
 }],
 "loop": true,
-"name": &"new_animation",
-"speed": 5.0
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uy2g7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1nm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1w0m8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8a51t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhlpr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5wip")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 12.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lkjt4"]
@@ -75,11 +102,14 @@ tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQAKAAAAAAD4//j/AQAKAAA
 [node name="Checkpoint" parent="RoomManager/TileMapLayer" unique_id=2040098654 instance=ExtResource("6_6g8e2")]
 position = Vector2(0, 88)
 
+[node name="Sprite2D" parent="RoomManager/TileMapLayer/Checkpoint" index="0" unique_id=790270011]
+animation = &"active"
+
 [node name="TileMapLayer26" parent="RoomManager" unique_id=509237900 instance=ExtResource("3_6g8e2")]
 position = Vector2(-320, 0)
 tile_map_data = PackedByteArray("AAD2//j/AQABAAAAAAD3//j/AQACAAMAAAD4//j/AQACAAMAAAD2//r/AQAAAAIAAAD2//n/AQAAAAEAAAD5//j/AQAFAAAAAAD6//j/AQAKAAAAAAD7//j/AQAKAAAAAAD8//j/AQAGAAAAAAD9//j/AQACAAMAAAD+//j/AQAFAAAAAAABAPj/AQAKAAAAAAACAPj/AQAKAAAAAAADAPj/AQAKAAAAAAAEAPj/AQAKAAAAAAAFAPj/AQAKAAAAAAAGAPj/AQAKAAAAAAAHAPj/AQAKAAAAAAAIAPj/AQAKAAAAAAAJAPj/AQALAAAAAAAJAPn/AQALAAIAAAAJAPr/AQALAAIAAAAJAPv/AQALAAIAAAAJAP7/AQALAAMAAAAJAAEAAQALAAAAAAAJAAIAAQALAAIAAAAJAAQAAQALAAIAAAAJAAUAAQALAAIAAAAJAAYAAQALAAIAAAAJAAcAAQALAAMAAAAIAAcAAQAJAAMAAAAHAAcAAQAJAAMAAAAGAAcAAQAJAAMAAAAFAAcAAQAJAAMAAAAEAAcAAQAJAAMAAAADAAcAAQAJAAMAAAACAAcAAQAJAAMAAAABAAcAAQAJAAMAAAAAAAcAAQAJAAMAAAD//wcAAQAJAAMAAAD+/wcAAQAFAAMAAAD9/wcAAQACAAMAAAD8/wcAAQAGAAMAAAD7/wcAAQAJAAMAAAD6/wcAAQAJAAMAAAD5/wcAAQAJAAMAAAD4/wcAAQAJAAMAAAD3/wcAAQAFAAMAAAD2/wcAAQABAAMAAAD///j/AQAKAAAAAAAAAPj/AQAKAAAAAAAIAP7/AQAIAAMAAAAIAAEAAQAIAAAAAAD3/wYAAQAIAAAAAAD4/wYAAQAKAAAAAAD5/wYAAQAFAAEAAAD6/wYAAQAGAAEAAAD7/wYAAQAKAAAAAAD8/wYAAQALAAAAAAD+/wYAAQAIAAEAAAD//wYAAQAJAAIAAAAAAAYAAQAJAAIAAAABAAYAAQAJAAIAAAACAAYAAQAJAAIAAAADAAYAAQAJAAIAAAAEAAYAAQAJAAIAAAAFAAYAAQAJAAIAAAAGAAYAAQAJAAIAAAAHAAYAAQAJAAIAAAAIAAYAAQAJAAIAAAD5//n/AQAIAAEAAAD6//n/AQAGAAIAAAD7//n/AQAJAAMAAAD8//n/AQALAAMAAAD+//n/AQAIAAMAAAD///n/AQAJAAMAAAAAAPn/AQAFAAIAAAABAPn/AQAJAAIAAAACAPn/AQAJAAIAAAADAPn/AQAJAAIAAAAEAPn/AQAJAAIAAAAFAPn/AQAJAAIAAAAGAPn/AQAJAAIAAAAHAPn/AQAJAAIAAAAIAPn/AQAJAAIAAAAJAAMAAQALAAIAAAAAAAUAAQAFAAEAAAABAAUAAQAJAAIAAAACAAQAAQAGAAEAAAAEAAMAAQAIAAAAAAADAAQAAQAKAAAAAAADAAUAAQAJAAIAAAACAAUAAQAJAAIAAAAEAAQAAQAFAAEAAAAFAAQAAQAJAAIAAAAFAAMAAQAKAAAAAAAGAAMAAQAFAAEAAAAEAAUAAQAJAAIAAAAFAAUAAQAJAAIAAAAGAAUAAQAJAAIAAAAGAAQAAQAJAAIAAAAHAAMAAQAJAAIAAAAHAAQAAQAJAAIAAAAHAAUAAQAJAAIAAAAIAAQAAQAJAAIAAAAIAAMAAQAJAAIAAAAIAAIAAQAFAAEAAAAIAAUAAQAJAAIAAAAJAPz/AQALAAIAAAAJAP3/AQALAAIAAAAIAP3/AQAFAAIAAAAIAPz/AQAJAAIAAAAIAPv/AQAJAAIAAAAIAPr/AQAJAAIAAAAHAP3/AQAJAAMAAAAHAPz/AQAJAAIAAAAHAPv/AQAJAAIAAAAHAPr/AQAJAAIAAAAGAP3/AQAJAAMAAAAGAPz/AQAJAAIAAAAGAPv/AQAJAAIAAAAGAPr/AQAJAAIAAAAFAPz/AQAFAAIAAAAFAPv/AQAJAAIAAAAFAPr/AQAJAAIAAAAEAPz/AQAIAAMAAAAEAPv/AQAFAAIAAAAEAPr/AQAJAAIAAAADAPv/AQAJAAMAAAADAPr/AQAJAAIAAAACAPv/AQAGAAIAAAACAPr/AQAJAAIAAAABAPr/AQAJAAIAAAAAAPr/AQAIAAEAAAAHAAIAAQAKAAAAAAAGAAIAAQAIAAAAAAABAPv/AQAFAAIAAAABAPz/AQAEAAIAAAAAAPv/AQAIAAMAAAABAP3/AQAAAAIAAAACAPz/AQALAAMAAAD5//r/AQAIAAMAAAD6//r/AQAHAAIAAAD6//v/AQAAAAIAAAAFAP3/AQAIAAMAAAABAAMAAQAKAAAAAAABAAQAAQAJAAIAAAAAAAMAAQAIAAAAAAAAAAQAAQAIAAEAAAD//wUAAQAKAAAAAAD+/wUAAQAIAAAAAAACAAMAAQALAAAAAAD5/wUAAQAIAAAAAAD6/wUAAQALAAAAAAA=")
 
-[node name="Spike5" parent="RoomManager/TileMapLayer26" unique_id=136205828 instance=ExtResource("4_pnvjf")]
+[node name="Spike5" parent="RoomManager/TileMapLayer26" unique_id=856519651 instance=ExtResource("4_pnvjf")]
 position = Vector2(-88, -56)
 flipped = true
 
@@ -426,18 +456,23 @@ position = Vector2(246.21225, 664.76764)
 
 [node name="Spike7" parent="RoomManager/TileMapLayer6" unique_id=1750697909 instance=ExtResource("4_pnvjf")]
 position = Vector2(24, -24)
+flipped = true
 
 [node name="Spike8" parent="RoomManager/TileMapLayer6" unique_id=517292152 instance=ExtResource("4_pnvjf")]
 position = Vector2(8, -24)
+flipped = true
 
 [node name="Spike9" parent="RoomManager/TileMapLayer6" unique_id=1343319050 instance=ExtResource("4_pnvjf")]
 position = Vector2(-8, -24)
+flipped = true
 
 [node name="Spike10" parent="RoomManager/TileMapLayer6" unique_id=1775931425 instance=ExtResource("4_pnvjf")]
 position = Vector2(-24, -24)
+flipped = true
 
 [node name="Spike11" parent="RoomManager/TileMapLayer6" unique_id=478800587 instance=ExtResource("4_pnvjf")]
 position = Vector2(-40, -24)
+flipped = true
 
 [node name="Spike12" parent="RoomManager/TileMapLayer6" unique_id=329462290 instance=ExtResource("4_pnvjf")]
 position = Vector2(8, 88)
@@ -465,27 +500,35 @@ position = Vector2(-104, 88)
 
 [node name="Spike20" parent="RoomManager/TileMapLayer6" unique_id=1656143735 instance=ExtResource("4_pnvjf")]
 position = Vector2(-56, -24)
+flipped = true
 
 [node name="Spike22" parent="RoomManager/TileMapLayer6" unique_id=1756701015 instance=ExtResource("4_pnvjf")]
 position = Vector2(88, 40)
+side = true
 
 [node name="Spike21" parent="RoomManager/TileMapLayer6" unique_id=1118577789 instance=ExtResource("4_pnvjf")]
 position = Vector2(-72, -24)
+flipped = true
 
 [node name="Spike23" parent="RoomManager/TileMapLayer6" unique_id=2110354580 instance=ExtResource("4_pnvjf")]
 position = Vector2(72, 40)
+side = true
 
 [node name="Spike24" parent="RoomManager/TileMapLayer6" unique_id=318139056 instance=ExtResource("4_pnvjf")]
 position = Vector2(56, 40)
+side = true
 
 [node name="Spike25" parent="RoomManager/TileMapLayer6" unique_id=2052628797 instance=ExtResource("4_pnvjf")]
 position = Vector2(40, 40)
+side = true
 
 [node name="Spike26" parent="RoomManager/TileMapLayer6" unique_id=1505653058 instance=ExtResource("4_pnvjf")]
 position = Vector2(24, 40)
+side = true
 
 [node name="Spike27" parent="RoomManager/TileMapLayer6" unique_id=1861058707 instance=ExtResource("4_pnvjf")]
 position = Vector2(8, 40)
+side = true
 
 [node name="TileMapLayer7" parent="RoomManager" unique_id=1504463352 instance=ExtResource("3_6g8e2")]
 position = Vector2(320, 720)
@@ -679,7 +722,7 @@ position = Vector2(176, 232)
 position = Vector2(144, 232)
 
 [node name="Checkpoint" parent="RoomManager/TileMapLayer9" unique_id=466656065 instance=ExtResource("6_6g8e2")]
-position = Vector2(-104, -152)
+position = Vector2(-88, -152)
 
 [node name="Moving_Platform_Var6" parent="RoomManager/TileMapLayer9" unique_id=1767699888 instance=ExtResource("5_eudka")]
 position = Vector2(-160, -112)
@@ -931,6 +974,7 @@ position = Vector2(-112, -112)
 
 [node name="Moving_Platform_Var2" parent="RoomManager/TileMapLayer12" unique_id=114189816 instance=ExtResource("5_eudka")]
 moveTime = 3.0
+small = true
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer12/Moving_Platform_Var2" index="0" unique_id=199387847]
 position = Vector2(-136, -24)
@@ -946,6 +990,7 @@ position = Vector2(88, -24)
 
 [node name="Moving_Platform_Var3" parent="RoomManager/TileMapLayer12" unique_id=1755922900 instance=ExtResource("5_eudka")]
 moveTime = 3.0
+small = true
 
 [node name="Moving_Platform" parent="RoomManager/TileMapLayer12/Moving_Platform_Var3" index="0" unique_id=199387847]
 position = Vector2(-88, -24)
@@ -1077,6 +1122,10 @@ position = Vector2(32, -8)
 [node name="EndPos" parent="RoomManager/TileMapLayer14/Death4" index="1" unique_id=751589911]
 position = Vector2(48, -8)
 
+[node name="Checkpoint" parent="RoomManager/TileMapLayer14" unique_id=1515981340 instance=ExtResource("6_6g8e2")]
+position = Vector2(-80, 72)
+flipped = true
+
 [node name="TileMapLayer15" parent="RoomManager" unique_id=1599663656 instance=ExtResource("3_6g8e2")]
 position = Vector2(-320, 1200)
 tile_map_data = PackedByteArray("AAD2//j/AQABAAAAAAD3//j/AQACAAMAAAD4//j/AQACAAMAAAD2//v/AQAAAAEAAAD2//r/AQAAAAEAAAD2//n/AQAAAAEAAAD5//j/AQACAAMAAAD6//j/AQACAAMAAAD7//j/AQADAAMAAAAEAPj/AQABAAMAAAAFAPj/AQACAAMAAAAGAPj/AQACAAMAAAAHAPj/AQACAAMAAAAIAPj/AQACAAMAAAAJAPj/AQADAAAAAAAJAPn/AQAAAAEAAAAJAPr/AQAAAAEAAAAJAPv/AQAAAAEAAAAJAP7/AQALAAIAAAAJAP//AQALAAIAAAAJAAAAAQALAAIAAAAJAAEAAQAHAAIAAAAJAAIAAQAAAAEAAAAJAAQAAQADAAEAAAAJAAUAAQAAAAEAAAAJAAYAAQAAAAEAAAAJAAcAAQAAAAIAAAD//wcAAQAAAAIAAAD7/wcAAQALAAMAAAD6/wcAAQAIAAMAAAD2/wcAAQAAAAIAAAD2/wYAAQAAAAEAAAD2/wUAAQAAAAEAAAD2/wQAAQABAAEAAAD2/wMAAQAAAAEAAAD2/wIAAQAAAAEAAAD2/wEAAQAAAAEAAAD2/wAAAQAAAAEAAAD2////AQAAAAEAAAD2//7/AQAEAAIAAAD2//3/AQAEAAEAAAD2//z/AQAAAAEAAAD3//7/AQAJAAMAAAD4//7/AQALAAMAAAD7//7/AQAIAAMAAAD8//7/AQAJAAMAAAAIAP7/AQAJAAIAAAAHAP7/AQAIAAEAAAAEAP7/AQALAAIAAAADAP7/AQAJAAIAAAADAP//AQAJAAIAAAADAAAAAQAJAAIAAAADAAEAAQAJAAMAAAAEAAEAAQALAAMAAAAHAAEAAQAIAAMAAAAIAAAAAQAJAAIAAAAIAP//AQAJAAIAAAAHAP//AQAIAAEAAAAEAP//AQALAAIAAAAEAAAAAQALAAIAAAAHAAAAAQAIAAEAAAAIAAEAAQAJAAMAAAD6/wYAAQAIAAEAAAD7/wYAAQALAAIAAAD//wYAAQAAAAEAAAAJAAMAAQAAAAEAAAAJAPz/AQAAAAEAAAAJAP3/AQAHAAEAAAAFAAQAAQACAAMAAAAEAAQAAQACAAMAAAADAAQAAQACAAMAAAACAAQAAQACAAMAAAAGAAQAAQACAAMAAAAHAAQAAQACAAMAAAAIAAQAAQACAAMAAAABAAQAAQACAAMAAAAAAAQAAQACAAMAAAD//wQAAQABAAAAAAD6/wQAAQAFAAAAAAD7/wQAAQALAAAAAAD7/wUAAQALAAIAAAD6/wUAAQAIAAEAAAD//wUAAQAAAAEAAAD3/wQAAQACAAMAAAD4/wQAAQACAAMAAAD5/wQAAQACAAMAAAD8//3/AQAKAAAAAAD9//7/AQAJAAMAAAD9//3/AQAKAAAAAAD+//3/AQAKAAAAAAD+//7/AQAJAAMAAAD3//3/AQAKAAAAAAD4//3/AQALAAAAAAD7//3/AQAIAAAAAAD///3/AQAKAAAAAAD///7/AQAFAAIAAAD/////AQAIAAEAAAD//wAAAQAIAAEAAAD//wEAAQAIAAMAAAAAAAEAAQAJAAMAAAABAAEAAQAJAAMAAAACAAEAAQAJAAMAAAADAP3/AQAKAAAAAAACAP3/AQAKAAAAAAABAP3/AQAKAAAAAAAAAP3/AQAKAAAAAAAAAP7/AQAJAAIAAAAAAP//AQAJAAIAAAAAAAAAAQAJAAIAAAABAP//AQAJAAIAAAABAP7/AQAJAAIAAAACAP7/AQAJAAIAAAACAP//AQAJAAIAAAACAAAAAQAJAAIAAAABAAAAAQAJAAIAAAAEAP3/AQALAAAAAAAIAP3/AQAKAAAAAAAHAP3/AQAIAAAAAAA=")
@@ -1195,6 +1244,9 @@ position = Vector2(32, 32)
 
 [node name="EndPos" parent="RoomManager/TileMapLayer15/Moving_Platform_Var" index="1" unique_id=751589911]
 position = Vector2(288, 32)
+
+[node name="Checkpoint" parent="RoomManager/TileMapLayer15" unique_id=807247483 instance=ExtResource("6_6g8e2")]
+position = Vector2(-120, 56)
 
 [node name="TileMapLayer16" parent="RoomManager" unique_id=1399169764 instance=ExtResource("3_6g8e2")]
 position = Vector2(-320, 960)
@@ -1451,7 +1503,7 @@ tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQAKAAAAAAD4//j/AQAKAAA
 
 [node name="Enemy2" parent="RoomManager/TileMapLayer18" unique_id=279604816 instance=ExtResource("2_2grjb")]
 position = Vector2(-120, 88)
-SPEED = 75
+SPEED = 50.0
 
 [node name="Checkpoint" parent="RoomManager/TileMapLayer18" unique_id=1835639526 instance=ExtResource("6_6g8e2")]
 position = Vector2(72, -56)
@@ -1462,23 +1514,23 @@ tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQAKAAAAAAD4//j/AQAKAAA
 
 [node name="Enemy3" parent="RoomManager/TileMapLayer19" unique_id=1795916520 instance=ExtResource("2_2grjb")]
 position = Vector2(-120, -24)
-SPEED = 75
+SPEED = 50.0
 
 [node name="Enemy5" parent="RoomManager/TileMapLayer19" unique_id=859378084 instance=ExtResource("2_2grjb")]
 position = Vector2(-72, 88)
-SPEED = 75
+SPEED = 75.0
 
 [node name="Enemy6" parent="RoomManager/TileMapLayer19" unique_id=815574739 instance=ExtResource("2_2grjb")]
-position = Vector2(-48, 88)
-SPEED = 75
+position = Vector2(-40, 88)
+SPEED = 75.0
 
 [node name="Enemy7" parent="RoomManager/TileMapLayer19" unique_id=2129408228 instance=ExtResource("2_2grjb")]
-position = Vector2(-24, 88)
-SPEED = 75
+position = Vector2(-8, 88)
+SPEED = 75.0
 
 [node name="Enemy4" parent="RoomManager/TileMapLayer19" unique_id=1253610878 instance=ExtResource("2_2grjb")]
 position = Vector2(88, -24)
-SPEED = 75
+SPEED = 50.0
 
 [node name="Spike" parent="RoomManager/TileMapLayer19" unique_id=1968958954 instance=ExtResource("4_pnvjf")]
 position = Vector2(-40, -88)
@@ -1584,11 +1636,12 @@ position = Vector2(-120, 104)
 
 [node name="Enemy2" parent="RoomManager/TileMapLayer20" unique_id=1377675310 instance=ExtResource("2_2grjb")]
 position = Vector2(-56, -24)
+SPEED = 50.0
 flipped = true
 
 [node name="Enemy3" parent="RoomManager/TileMapLayer20" unique_id=57766706 instance=ExtResource("2_2grjb")]
 position = Vector2(56, -24)
-SPEED = 50
+SPEED = 50.0
 flipped = true
 
 [node name="Checkpoint" parent="RoomManager/TileMapLayer20" unique_id=1891489654 instance=ExtResource("6_6g8e2")]
@@ -1600,19 +1653,16 @@ tile_map_data = PackedByteArray("AAD2//j/AQAIAAAAAAD3//j/AQALAAAAAAD2//v/AQAIAAE
 
 [node name="Enemy4" parent="RoomManager/TileMapLayer21" unique_id=1329199904 instance=ExtResource("2_2grjb")]
 position = Vector2(-40, 56)
+SPEED = 50.0
 
 [node name="Enemy6" parent="RoomManager/TileMapLayer21" unique_id=1744286302 instance=ExtResource("2_2grjb")]
 position = Vector2(24, 32)
-SPEED = 50
+SPEED = 50.0
 flipped = true
 
 [node name="Enemy7" parent="RoomManager/TileMapLayer21" unique_id=537339546 instance=ExtResource("2_2grjb")]
 position = Vector2(-56, -24)
-SPEED = 50
-
-[node name="Enemy5" parent="RoomManager/TileMapLayer21" unique_id=1896693312 instance=ExtResource("2_2grjb")]
-position = Vector2(32, -56)
-flipped = true
+SPEED = 50.0
 
 [node name="Spike" parent="RoomManager/TileMapLayer21" unique_id=1826740165 instance=ExtResource("4_pnvjf")]
 position = Vector2(56, -56)
@@ -2279,33 +2329,43 @@ position = Vector2(88, 88)
 
 [node name="Spike" parent="RoomManager/TileMapLayer24" unique_id=1158533519 instance=ExtResource("4_pnvjf")]
 position = Vector2(88, -80)
+side = true
 
 [node name="Spike5" parent="RoomManager/TileMapLayer24" unique_id=426590435 instance=ExtResource("4_pnvjf")]
 position = Vector2(-136, -88)
+flipped = true
 
 [node name="Spike6" parent="RoomManager/TileMapLayer24" unique_id=2029405507 instance=ExtResource("4_pnvjf")]
 position = Vector2(-120, -88)
+flipped = true
 
 [node name="Spike7" parent="RoomManager/TileMapLayer24" unique_id=1031821273 instance=ExtResource("4_pnvjf")]
 position = Vector2(-104, -88)
+flipped = true
 
 [node name="Spike8" parent="RoomManager/TileMapLayer24" unique_id=2073758939 instance=ExtResource("4_pnvjf")]
 position = Vector2(-88, -88)
+flipped = true
 
 [node name="Spike9" parent="RoomManager/TileMapLayer24" unique_id=329426302 instance=ExtResource("4_pnvjf")]
 position = Vector2(-72, -88)
+flipped = true
 
 [node name="Spike10" parent="RoomManager/TileMapLayer24" unique_id=1773940138 instance=ExtResource("4_pnvjf")]
 position = Vector2(-56, -88)
+flipped = true
 
 [node name="Spike11" parent="RoomManager/TileMapLayer24" unique_id=969219920 instance=ExtResource("4_pnvjf")]
 position = Vector2(-40, -88)
+flipped = true
 
 [node name="Spike12" parent="RoomManager/TileMapLayer24" unique_id=1949750652 instance=ExtResource("4_pnvjf")]
 position = Vector2(-24, -88)
+flipped = true
 
 [node name="Spike13" parent="RoomManager/TileMapLayer24" unique_id=1470301004 instance=ExtResource("4_pnvjf")]
 position = Vector2(-8, -88)
+flipped = true
 
 [node name="Spike14" parent="RoomManager/TileMapLayer24" unique_id=1660899940 instance=ExtResource("4_pnvjf")]
 position = Vector2(-8, 104)
@@ -2336,18 +2396,22 @@ position = Vector2(-136, 104)
 
 [node name="Spike23" parent="RoomManager/TileMapLayer24" unique_id=982574451 instance=ExtResource("4_pnvjf")]
 position = Vector2(-56, 40)
+flipped = true
 
 [node name="Spike24" parent="RoomManager/TileMapLayer24" unique_id=1891217704 instance=ExtResource("4_pnvjf")]
 position = Vector2(-56, -24)
 
 [node name="Spike3" parent="RoomManager/TileMapLayer24" unique_id=1093347198 instance=ExtResource("4_pnvjf")]
 position = Vector2(96, -32)
+side = true
 
 [node name="Spike2" parent="RoomManager/TileMapLayer24" unique_id=1185791485 instance=ExtResource("4_pnvjf")]
 position = Vector2(136, 16)
+side = true
 
 [node name="Spike4" parent="RoomManager/TileMapLayer24" unique_id=2021992188 instance=ExtResource("4_pnvjf")]
 position = Vector2(128, 64)
+side = true
 
 [node name="TileMapLayer25" parent="RoomManager" unique_id=20076228 instance=ExtResource("3_6g8e2")]
 position = Vector2(-640, 960)
@@ -2471,57 +2535,75 @@ position = Vector2(8, 56)
 
 [node name="Spike15" parent="RoomManager/TileMapLayer25" unique_id=1726312096 instance=ExtResource("4_pnvjf")]
 position = Vector2(-136, 8)
+side = true
 
 [node name="Spike16" parent="RoomManager/TileMapLayer25" unique_id=844818130 instance=ExtResource("4_pnvjf")]
 position = Vector2(-120, 56)
+side = true
 
 [node name="Spike17" parent="RoomManager/TileMapLayer25" unique_id=1873093585 instance=ExtResource("4_pnvjf")]
 position = Vector2(-104, 16)
+side = true
 
 [node name="Spike18" parent="RoomManager/TileMapLayer25" unique_id=1672878122 instance=ExtResource("4_pnvjf")]
 position = Vector2(-88, -16)
+side = true
 
 [node name="Spike19" parent="RoomManager/TileMapLayer25" unique_id=281169003 instance=ExtResource("4_pnvjf")]
 position = Vector2(-40, 24)
+side = true
 
 [node name="Spike20" parent="RoomManager/TileMapLayer25" unique_id=330859954 instance=ExtResource("4_pnvjf")]
 position = Vector2(-24, 8)
+side = true
 
 [node name="Spike21" parent="RoomManager/TileMapLayer25" unique_id=671512654 instance=ExtResource("4_pnvjf")]
 position = Vector2(-40, -32)
+side = true
 
 [node name="Spike22" parent="RoomManager/TileMapLayer25" unique_id=205692921 instance=ExtResource("4_pnvjf")]
 position = Vector2(-8, -16)
+side = true
 
 [node name="Spike23" parent="RoomManager/TileMapLayer25" unique_id=707835968 instance=ExtResource("4_pnvjf")]
 position = Vector2(8, 40)
+side = true
 
 [node name="Spike24" parent="RoomManager/TileMapLayer25" unique_id=804149848 instance=ExtResource("4_pnvjf")]
 position = Vector2(24, 72)
+side = true
 
 [node name="Spike25" parent="RoomManager/TileMapLayer25" unique_id=1107050489 instance=ExtResource("4_pnvjf")]
 position = Vector2(40, 56)
+side = true
 
 [node name="Spike26" parent="RoomManager/TileMapLayer25" unique_id=32554653 instance=ExtResource("4_pnvjf")]
 position = Vector2(24, -8)
+side = true
 
 [node name="Spike27" parent="RoomManager/TileMapLayer25" unique_id=1371321707 instance=ExtResource("4_pnvjf")]
 position = Vector2(40, 24)
+side = true
 
 [node name="Spike29" parent="RoomManager/TileMapLayer25" unique_id=543325038 instance=ExtResource("4_pnvjf")]
 position = Vector2(72, 8)
+side = true
 
 [node name="Spike30" parent="RoomManager/TileMapLayer25" unique_id=597385965 instance=ExtResource("4_pnvjf")]
 position = Vector2(72, 72)
+side = true
 
 [node name="Spike31" parent="RoomManager/TileMapLayer25" unique_id=780920827 instance=ExtResource("4_pnvjf")]
 position = Vector2(-136, 72)
+side = true
 
 [node name="Spike32" parent="RoomManager/TileMapLayer25" unique_id=673132991 instance=ExtResource("4_pnvjf")]
 position = Vector2(-136, 40)
+side = true
 
 [node name="Spike28" parent="RoomManager/TileMapLayer25" unique_id=2024956260 instance=ExtResource("4_pnvjf")]
 position = Vector2(56, -8)
+side = true
 
 [node name="Vanishing_Platform21" parent="RoomManager/TileMapLayer25" unique_id=1006797441 instance=ExtResource("6_u45fp")]
 position = Vector2(-72, 8)
@@ -2534,60 +2616,115 @@ position = Vector2(-56, -32)
 
 [node name="Spike33" parent="RoomManager/TileMapLayer25" unique_id=1721844841 instance=ExtResource("4_pnvjf")]
 position = Vector2(-56, 56)
+side = true
 
 [node name="Spike34" parent="RoomManager/TileMapLayer25" unique_id=267783411 instance=ExtResource("4_pnvjf")]
 position = Vector2(-24, 56)
+side = true
 
 [node name="Spike35" parent="RoomManager/TileMapLayer25" unique_id=92232146 instance=ExtResource("4_pnvjf")]
 position = Vector2(-8, 72)
+side = true
 
 [node name="Checkpoint" parent="RoomManager/TileMapLayer25" unique_id=1596246551 instance=ExtResource("6_6g8e2")]
 position = Vector2(112, -72)
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=1617331225 node_paths=PackedStringArray("checkpoint") groups=["Player"]]
-position = Vector2(-32, 72)
+position = Vector2(0, 88)
 collision_layer = 2
 script = ExtResource("2_ny0t1")
+active = false
 checkpoint = NodePath("../RoomManager/TileMapLayer/Checkpoint")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1293256041]
 texture_filter = 1
-position = Vector2(0, -2)
+position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_u45fp")
-animation = &"new_animation"
+animation = &"walk"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=770135081]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_lkjt4")
 
 [node name="She\'lah" parent="." unique_id=2096431186 instance=ExtResource("13_drwxn")]
-position = Vector2(-112, 416)
-dialogue = "Mairon! Go find Fen, Talia, and Ragdain and I’ll get this door open!"
+position = Vector2(-112, 424)
+dialogue = "Mairon! Go find the others and I'll get this door open!"
+
+[node name="AnimatedSprite2D" parent="She\'lah" index="0" unique_id=978260084]
+animation = &"shelah"
 
 [node name="Fen" parent="." unique_id=705961625 instance=ExtResource("13_drwxn")]
-position = Vector2(600, 640)
+position = Vector2(600, 648)
 dialogue = "I'm an old man!"
 
+[node name="Sprite2D" parent="Fen" index="2" unique_id=409297553]
+position = Vector2(0, -20)
+
 [node name="Ragdain" parent="." unique_id=1686102579 instance=ExtResource("13_drwxn")]
-position = Vector2(0, 912)
+position = Vector2(0, 920)
 dialogue = "Ragdain!"
+
+[node name="AnimatedSprite2D" parent="Ragdain" index="0" unique_id=978260084]
+animation = &"ragdain"
+
+[node name="Sprite2D" parent="Ragdain" index="2" unique_id=409297553]
+position = Vector2(0, -24)
 
 [node name="Talia" parent="." unique_id=1588287713 instance=ExtResource("13_drwxn")]
 position = Vector2(-720, 712)
 dialogue = "I am also here!"
+
+[node name="AnimatedSprite2D" parent="Talia" index="0" unique_id=978260084]
+animation = &"talia"
 
 [node name="Sam" parent="." unique_id=12489969 instance=ExtResource("15_epu3l")]
 position = Vector2(-696, -8)
 dialogue = "Oh, you already got out. Let's go!"
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1209412108]
+script = ExtResource("16_1w0m8")
+
+[node name="TextBox" type="TextureRect" parent="UI" unique_id=1031221713]
+offset_right = 640.0
+offset_bottom = 64.0
+texture = ExtResource("16_u1nm5")
 
 [node name="Dialogue" type="RichTextLabel" parent="UI" unique_id=181628960]
+offset_top = 16.0
 offset_right = 640.0
-offset_bottom = 128.0
+offset_bottom = 144.0
+theme_override_fonts/normal_font = ExtResource("16_uy2g7")
+theme_override_font_sizes/normal_font_size = 13
 bbcode_enabled = true
-text = "[center]"
+text = "[center]Press 'Space' to reverse gravity!"
 script = ExtResource("14_rmkky")
+
+[node name="ProceedText" type="RichTextLabel" parent="UI" unique_id=175353]
+offset_left = 576.0
+offset_top = 48.0
+offset_right = 632.0
+offset_bottom = 168.0
+theme_override_fonts/normal_font = ExtResource("16_uy2g7")
+theme_override_font_sizes/normal_font_size = 7
+bbcode_enabled = true
+text = "[center][Escape]"
+
+[node name="Timer" type="RichTextLabel" parent="UI" unique_id=3944616]
+offset_left = 504.0
+offset_top = 464.0
+offset_right = 640.0
+offset_bottom = 480.0
+theme_override_fonts/normal_font = ExtResource("16_uy2g7")
+text = "1:00:00"
+horizontal_alignment = 2
+
+[node name="Deaths" type="RichTextLabel" parent="UI" unique_id=108525780]
+offset_top = 464.0
+offset_right = 640.0
+offset_bottom = 480.0
+theme_override_fonts/normal_font = ExtResource("16_uy2g7")
+text = "1:00:00"
 
 [node name="Exit" type="StaticBody2D" parent="." unique_id=1193731547]
 collision_mask = 2
@@ -2597,6 +2734,12 @@ script = ExtResource("16_lqn8c")
 position = Vector2(-112, 376)
 shape = SubResource("RectangleShape2D_epu3l")
 
+[node name="Sprite2D" type="Sprite2D" parent="Exit" unique_id=1663815852]
+texture_filter = 1
+position = Vector2(-112, 376)
+texture = ExtResource("17_08uri")
+
+[editable path="RoomManager/TileMapLayer/Checkpoint"]
 [editable path="RoomManager/TileMapLayer3/Moving_Platform_Var"]
 [editable path="RoomManager/TileMapLayer6/Moving_Platform_Var"]
 [editable path="RoomManager/TileMapLayer6/Moving_Platform_Var2"]
@@ -2635,3 +2778,7 @@ shape = SubResource("RectangleShape2D_epu3l")
 [editable path="RoomManager/TileMapLayer17/Moving_Platform_Var"]
 [editable path="RoomManager/TileMapLayer17/Moving_Platform_Var2"]
 [editable path="RoomManager/TileMapLayer17/Death_Platform_Var"]
+[editable path="She\'lah"]
+[editable path="Fen"]
+[editable path="Ragdain"]
+[editable path="Talia"]

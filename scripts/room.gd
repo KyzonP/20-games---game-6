@@ -3,6 +3,9 @@ extends TileMapLayer
 # Enabled by any children who are set to always be active
 var alwaysActiveChild : bool = false
 
+func _ready():
+	$Sprite2D.visible = true
+
 func enable():
 	if not alwaysActiveChild:
 		visible = true
