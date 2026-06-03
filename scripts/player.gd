@@ -51,7 +51,10 @@ func flip_gravity():
 	up_direction *= -1
 	GRAVITY *= -1
 	anim.flip_v = !anim.flip_v
-	$AnimatedSprite2D.position *= -1
+	if up_direction == Vector2(0,-1):
+		$AnimatedSprite2D.position = Vector2(0,-5)
+	else:
+		$AnimatedSprite2D.position = Vector2(0,5)
 	
 func changeCheckpoint(body):
 	if body is Area2D:

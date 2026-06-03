@@ -11,9 +11,12 @@ config_version=5
 [application]
 
 config/name="20 Games - Game 6"
-run/main_scene="uid://do5evpu4c5xdp"
+run/main_scene="uid://dakuaacatlued"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://be4sn3711nh3u"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=10
 
 [autoload]
 

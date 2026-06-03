@@ -24,4 +24,3 @@ func _physics_process(_delta):
 			textBox.visible = false
 			proceedText.visible = false
 			EventBus.emit_signal("unfreeze")
-		

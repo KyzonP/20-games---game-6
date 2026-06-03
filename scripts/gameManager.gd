@@ -31,10 +31,17 @@ func reset():
 func _physics_process(delta):
 	if not gameOver:
 		timer += delta
+		
+	if gameOver:
+		if Input.is_action_just_pressed("dialogue"):
+			get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 	
 func completeGame():
 	### END GAME CODE HERE ###
 	gameOver = true
+	Global.submitScores(timer, deaths)
+	SaveLoad.save_game()
 	
-	#EventBus.emit_signal("changeDialogue","Press Escape to return to main menu")
+	
+	
 	

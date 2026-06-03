@@ -4,7 +4,8 @@ func _ready():
 	if Global.showTimer:
 		$Timer.visible = true
 	else:
-		$Timer.visible = false
+		#$Timer.visible = false
+		pass
 		
 	if Global.showDeaths:
 		$Deaths.visible = true

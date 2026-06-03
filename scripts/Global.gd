@@ -3,8 +3,8 @@ extends Node
 var showTimer : bool = false
 var showDeaths : bool = false
 
-var bestTime : float = 0.0
-var bestDeaths : int = 0
+var bestTime : float = 999999999999999.99
+var bestDeaths : int = 999999999999999
 
 func submitScores(time, deaths):
 	if time < bestTime:

@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://dakuaacatlued"]
+
+[ext_resource type="Script" uid="uid://bfi3cg4xkn2wq" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="FontFile" uid="uid://bptnrs6ljbux2" path="res://assets/fonts/PrStart.ttf" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://c4kb7eghi3eov" path="res://assets/ui/menubackground.png" id="3_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://buwi3kvae2bv2" path="res://assets/ui/ButtonNormal.png" id="4_8ln24"]
+[ext_resource type="Texture2D" uid="uid://cp3duvpw23i4f" path="res://assets/ui/ButtonHover.png" id="5_rtw2f"]
+
+[node name="MainMenu" type="Control" unique_id=1167741002]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bqqt6")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1613123078]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+mouse_filter = 2
+texture = ExtResource("3_bqqt6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1331987255]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 128.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("1_l6cm7")
+theme_override_font_sizes/normal_font_size = 48
+text = "MMM"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1748555905]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+alignment = 1
+
+[node name="StartBox" type="HBoxContainer" parent="VBoxContainer" unique_id=728706621]
+layout_mode = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/StartBox" unique_id=1235325638]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("1_l6cm7")
+text = "START GAME"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/StartBox/RichTextLabel" unique_id=862233883]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_top = -0.22000001
+anchor_right = 0.9480001
+anchor_bottom = 0.58000004
+offset_left = -40.0
+offset_top = 6.000001
+offset_right = 15.999985
+offset_bottom = -2.000002
+texture_normal = ExtResource("4_8ln24")
+texture_hover = ExtResource("5_rtw2f")
+
+[node name="TimerBox" type="HBoxContainer" parent="VBoxContainer" unique_id=81537379]
+layout_mode = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/TimerBox" unique_id=533469668]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_l6cm7")
+text = "TIMER DISABLED"
+horizontal_alignment = 1
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/TimerBox/RichTextLabel" unique_id=1590170105]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_top = -0.22000001
+anchor_right = 0.9480001
+anchor_bottom = 0.58000004
+offset_left = -40.0
+offset_top = -4.399993
+offset_right = 15.999985
+offset_bottom = 3.600006
+texture_normal = ExtResource("4_8ln24")
+texture_hover = ExtResource("5_rtw2f")
+
+[node name="DeathBox" type="HBoxContainer" parent="VBoxContainer" unique_id=148741600]
+layout_mode = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/DeathBox" unique_id=1884207377]
+custom_minimum_size = Vector2(250, 30)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_l6cm7")
+text = "DEATHS DISABLED"
+horizontal_alignment = 1
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/DeathBox/RichTextLabel" unique_id=245764935]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.148
+anchor_top = -0.22000001
+anchor_right = 0.9480001
+anchor_bottom = 0.58000004
+offset_left = -40.0
+offset_top = -6.399993
+offset_right = 15.999985
+offset_bottom = 1.6000061
+texture_normal = ExtResource("4_8ln24")
+texture_hover = ExtResource("5_rtw2f")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=1131098269]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.287
+anchor_top = 0.8
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.6799927
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimerText" type="RichTextLabel" parent="HBoxContainer" unique_id=1725335211]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_l6cm7")
+text = "Fastest Time: N/A"
+
+[node name="DeathText" type="RichTextLabel" parent="HBoxContainer" unique_id=1618458034]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_l6cm7")
+text = "Least Deaths: N/A"

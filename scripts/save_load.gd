@@ -9,6 +9,7 @@ func save():
 	return save_dict
 	
 func save_game():
+	print("saving")
 	var save_data= FileAccess.open("user://MM.save", FileAccess.WRITE)
 	
 	var json_string = JSON.stringify(save())
