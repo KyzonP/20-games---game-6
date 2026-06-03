@@ -3,6 +3,9 @@ extends Node
 var showTimer : bool = false
 var showDeaths : bool = false
 
+var soundEnabled : bool = true
+var musicEnabled : bool = true
+
 var bestTime : float = 999999999999999.99
 var bestDeaths : int = 999999999999999
 

@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://n5kqqeuenbuo" path="res://assets/character/shelah.png" id="3_dp8ca"]
 [ext_resource type="Texture2D" uid="uid://cevmbbnuymjhb" path="res://assets/hazard/Alert.png" id="3_lrhn5"]
 [ext_resource type="Texture2D" uid="uid://b2w62rg2jqkv7" path="res://assets/character/talia.png" id="3_my7n2"]
+[ext_resource type="AudioStream" uid="uid://bmdfik58ntruf" path="res://audio/speak.wav" id="9_0dpix"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
 atlas = ExtResource("1_agfs1")
@@ -108,3 +109,6 @@ z_index = 2
 texture_filter = 1
 position = Vector2(0, -32)
 texture = ExtResource("3_lrhn5")
+
+[node name="Speak" type="AudioStreamPlayer2D" parent="." unique_id=1801781411]
+stream = ExtResource("9_0dpix")

@@ -14,6 +14,9 @@ func _ready():
 	EventBus.restart.connect(reset)
 	EventBus.smallRestart.connect(reset)
 	
+	if Global.musicEnabled:
+		$Soundtrack.play()
+	
 func progressLevel():
 	progress = progress + 1
 	if progress >= 4 and not exitOpened:
@@ -35,6 +38,15 @@ func _physics_process(delta):
 	if gameOver:
 		if Input.is_action_just_pressed("dialogue"):
 			get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+			
+	if Input.is_action_just_pressed("mute_music"):
+		if $Soundtrack.playing:
+			$Soundtrack.stop()
+		else:
+			$Soundtrack.play()
+			
+	if Input.is_action_just_pressed("mute_sound"):
+		Global.soundEnabled = not Global.soundEnabled
 	
 func completeGame():
 	### END GAME CODE HERE ###

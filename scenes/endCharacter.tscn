@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bst17tfuh5rnc" path="res://assets/character/sam.png" id="3_tm1uf"]
 [ext_resource type="Texture2D" uid="uid://n5kqqeuenbuo" path="res://assets/character/shelah.png" id="4_6p2o3"]
 [ext_resource type="Texture2D" uid="uid://b2w62rg2jqkv7" path="res://assets/character/talia.png" id="5_v1k7x"]
+[ext_resource type="AudioStream" uid="uid://bmdfik58ntruf" path="res://audio/speak.wav" id="6_6p2o3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ny0t1"]
 atlas = ExtResource("2_4p1nm")
@@ -83,3 +84,6 @@ animation = &"sam"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272001979]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_lrhn5")
+
+[node name="Speak" type="AudioStreamPlayer2D" parent="." unique_id=1528998569]
+stream = ExtResource("6_6p2o3")

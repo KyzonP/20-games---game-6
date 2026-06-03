@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://3imkt52fwa1k" path="res://scripts/checkpoint.gd" id="1_ywqth"]
 [ext_resource type="Texture2D" uid="uid://1i0bi1cfj0xx" path="res://assets/hazard/Checkpoint.png" id="2_ywqth"]
+[ext_resource type="AudioStream" uid="uid://dmiopihaodals" path="res://audio/checkpoint.wav" id="3_vsimk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ywqth"]
 atlas = ExtResource("2_ywqth")
@@ -96,3 +97,6 @@ autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=381634432]
 shape = SubResource("RectangleShape2D_6g8e2")
+
+[node name="Checkpoint" type="AudioStreamPlayer2D" parent="." unique_id=2073176986]
+stream = ExtResource("3_vsimk")

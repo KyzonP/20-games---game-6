@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://y44r8slty3b2" path="res://assets/character/mairon.png" id="12_08uri"]
 [ext_resource type="PackedScene" uid="uid://donxwho7brw4o" path="res://scenes/character.tscn" id="13_drwxn"]
 [ext_resource type="Texture2D" uid="uid://doep4elnrp048" path="res://assets/character/maironwalk.png" id="13_fivcu"]
+[ext_resource type="AudioStream" uid="uid://ddua1di2req05" path="res://audio/death.wav" id="14_8a51t"]
+[ext_resource type="AudioStream" uid="uid://d3r5a3yv0nana" path="res://audio/jump.wav" id="14_jhlpr"]
 [ext_resource type="Script" uid="uid://dell20c5gsfj1" path="res://scripts/dialogue.gd" id="14_rmkky"]
 [ext_resource type="PackedScene" uid="uid://dupojsemf3kkv" path="res://scenes/endCharacter.tscn" id="15_epu3l"]
 [ext_resource type="Script" uid="uid://bjhwl1ak10uev" path="res://scripts/ui.gd" id="16_1w0m8"]
@@ -21,6 +23,8 @@
 [ext_resource type="Texture2D" uid="uid://dsp7r1yehs6e1" path="res://assets/ui/textbox.png" id="16_u1nm5"]
 [ext_resource type="FontFile" uid="uid://bptnrs6ljbux2" path="res://assets/fonts/PrStart.ttf" id="16_uy2g7"]
 [ext_resource type="Texture2D" uid="uid://ch7c7dgbe5fqb" path="res://assets/hazard/Gate.png" id="17_08uri"]
+[ext_resource type="AudioStream" uid="uid://bman6v3mixg4w" path="res://audio/MMMSong.wav" id="24_b5wip"]
+[ext_resource type="Script" uid="uid://8usmeuq61xku" path="res://scripts/music.gd" id="25_70x8p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uy2g7"]
 atlas = ExtResource("13_fivcu")
@@ -1525,7 +1529,7 @@ position = Vector2(-40, 88)
 SPEED = 75.0
 
 [node name="Enemy7" parent="RoomManager/TileMapLayer19" unique_id=2129408228 instance=ExtResource("2_2grjb")]
-position = Vector2(-8, 88)
+position = Vector2(200, 88)
 SPEED = 75.0
 
 [node name="Enemy4" parent="RoomManager/TileMapLayer19" unique_id=1253610878 instance=ExtResource("2_2grjb")]
@@ -2647,9 +2651,18 @@ autoplay = "idle"
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_lkjt4")
 
+[node name="Jump" type="AudioStreamPlayer2D" parent="Player" unique_id=1602764846]
+position = Vector2(0, -88)
+stream = ExtResource("14_jhlpr")
+
+[node name="Death" type="AudioStreamPlayer2D" parent="Player" unique_id=624174922]
+stream = ExtResource("14_8a51t")
+
 [node name="She\'lah" parent="." unique_id=2096431186 instance=ExtResource("13_drwxn")]
 position = Vector2(-112, 424)
 dialogue = "Mairon! Go find the others and I'll get this door open!"
+shelah = true
+shelahDialogue = "You found the others? Great, I just got this door open!"
 
 [node name="AnimatedSprite2D" parent="She\'lah" index="0" unique_id=978260084]
 animation = &"shelah"
@@ -2701,14 +2714,15 @@ text = "[center]Press 'Space' to reverse gravity!"
 script = ExtResource("14_rmkky")
 
 [node name="ProceedText" type="RichTextLabel" parent="UI" unique_id=175353]
-offset_left = 576.0
+offset_left = 488.0
 offset_top = 48.0
 offset_right = 632.0
-offset_bottom = 168.0
+offset_bottom = 64.0
 theme_override_fonts/normal_font = ExtResource("16_uy2g7")
 theme_override_font_sizes/normal_font_size = 7
 bbcode_enabled = true
-text = "[center][Escape]"
+text = "[center][X to proceed]"
+horizontal_alignment = 2
 
 [node name="Timer" type="RichTextLabel" parent="UI" unique_id=3944616]
 offset_left = 504.0
@@ -2738,6 +2752,11 @@ shape = SubResource("RectangleShape2D_epu3l")
 texture_filter = 1
 position = Vector2(-112, 376)
 texture = ExtResource("17_08uri")
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="." unique_id=1129586644]
+stream = ExtResource("24_b5wip")
+volume_db = -10.0
+script = ExtResource("25_70x8p")
 
 [editable path="RoomManager/TileMapLayer/Checkpoint"]
 [editable path="RoomManager/TileMapLayer3/Moving_Platform_Var"]

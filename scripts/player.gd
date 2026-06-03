@@ -46,6 +46,10 @@ func _input(event):
 	if event.is_action_pressed("flip_gravity"):
 		if is_on_floor():
 			flip_gravity()
+			
+			#Audio
+			if Global.soundEnabled:
+				$Jump.play()
 		
 func flip_gravity():
 	up_direction *= -1
@@ -89,5 +93,9 @@ func die():
 	if is_dead:
 		return
 	is_dead = true
+	
+	#Audio
+	if Global.soundEnabled:
+		$Death.play()
 	
 	EventBus.emit_signal.call_deferred("smallRestart")

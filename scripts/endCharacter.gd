@@ -12,4 +12,7 @@ func playerDetected(body):
 		found = true
 		EventBus.emit_signal("changeDialogue", dialogue)
 		EventBus.emit_signal("completeGame")
-	
+		
+		#Audio
+		if Global.soundEnabled:
+			$Speak.play()
